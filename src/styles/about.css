@@ -1,0 +1,336 @@
+.contentabt {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* background-color: #fef5e894; */
+  position: relative;
+}
+
+.content-area {
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+  background: white;
+  border-radius: 15px;
+  transition: margin-right 0.3s;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #fff;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 82.1vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  margin: 10px;
+  border-radius: 15px;
+  position: sticky;
+  top: 10px;
+  width: 15%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar a {
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #34495e;
+  transition: background 0.3s;
+  text-align: left;
+  border: none;
+}
+
+/* Base styles for transition */
+.sidebar a,
+.sidebar-link {
+  transition: background-color 0.3s ease, color 0.3s ease, font-weight 0.3s ease,
+    border-left 0.3s ease;
+}
+
+/* Active link styling */
+.sidebar-link.active {
+  background-color: #f0f0f0; /* Highlight background */
+  font-weight: bold;
+  color: #36454f;
+  border-left: 4px solid #36454f; /* Optional: colored indicator */
+}
+
+.sidebar a.active {
+  color: #36454f;
+  font-weight: bolder;
+  background-color: #f8f8f8;
+}
+
+/* Hover and target styles */
+.sidebar a:hover,
+.sidebar a:target {
+  background-color: #f8f8f8;
+  color: black;
+  text-decoration: none;
+}
+
+.section-title {
+  font-size: 32px;
+  text-align: left;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #f39c12;
+  /* margin: 10px auto 0; */
+  border-radius: 2px;
+}
+
+.event {
+  background: #ffffffcc;
+  border-left: 6px solid #f39c12;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.event:hover {
+  transform: translateY(-4px);
+}
+
+.event h2 {
+  margin-top: 0;
+  color: #34495e;
+  font-size: 22px;
+  text-align: left;
+}
+
+.event p {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #2c3e50;
+  text-align: left;
+}
+
+/* Add this to your about.css */
+.tab-content {
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.tab-content:first-child {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.tab-content h1 {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.tab-content:target {
+  display: block;
+}
+
+.tab-content1 {
+  padding: 20px;
+  background-color: #f4fbff;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: left;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #cc5500;
+}
+
+.heading1 {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #36454f;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.btn-view {
+  background-color: #28a745;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.btn-view:hover {
+  background-color: #218838;
+}
+
+.iconss {
+  display: none;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .contentabt {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+    margin: 0;
+    position: relative;
+    top: auto;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: #f8f8f8;
+  }
+
+  .sidebar a {
+    display: inline-block;
+    padding: 10px 15px;
+    border-bottom: none;
+    border-right: 1px solid #ddd;
+  }
+
+  .sidebar-link.active {
+    border-left: none;
+    border-bottom: 3px solid #36454f;
+  }
+
+  .content-area {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .event {
+    padding: 15px;
+  }
+
+  .event h2 {
+    font-size: 20px;
+  }
+
+  .event p {
+    font-size: 16px;
+  }
+
+  .heading {
+    font-size: 18px;
+  }
+
+  .heading1 {
+    font-size: 17px;
+  }
+
+  .tab-content1 {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tab-content h1 {
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 18px;
+  }
+  th,
+  td {
+    font-size: 12px;
+    padding: 5px;
+  }
+  .btn-view {
+    display: none;
+  }
+
+  .iconss {
+    display: block;
+    background-color: #28a745;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .section-title {
+    font-size: 24px;
+  }
+
+  .event h2 {
+    font-size: 18px;
+  }
+
+  .event p {
+    font-size: 15px;
+  }
+
+  .heading {
+    font-size: 16px;
+  }
+
+  .heading1 {
+    font-size: 15px;
+  }
+
+  .sidebar a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .tab-content {
+    overflow: scroll;
+  }
+}
+
+/* Hide scrollbar for sidebar but keep functionality */
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
