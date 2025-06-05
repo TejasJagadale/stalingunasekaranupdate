@@ -148,8 +148,7 @@ const essaysData = [
     author: "John Doe",
     publication: "Environmental Review",
     date: "March 22, 2022",
-    excerpt:
-      "தமிழக சட்டப் பேரவைத் தலைவரின் பாராட்டு ",
+    excerpt: "தமிழக சட்டப் பேரவைத் தலைவரின் பாராட்டு ",
     content: "Full essay content would go here...",
     tags: ["Environment", "Politics", "Science"],
     imageUrl: "/ktturaigal/img-12.jpg",
@@ -162,8 +161,7 @@ const essaysData = [
     author: "John Doe",
     publication: "Environmental Review",
     date: "March 22, 2022",
-    excerpt:
-      "தமிழக சட்டப் பேரவைத் தலைவரின் பாராட்டு",
+    excerpt: "தமிழக சட்டப் பேரவைத் தலைவரின் பாராட்டு",
     content: "Full essay content would go here...",
     tags: ["Environment", "Politics", "Science"],
     imageUrl: "/ktturaigal/img-13.jpg",
@@ -190,7 +188,9 @@ const Essay = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [filterTag, setFilterTag] = useState(null);
   const [lightboxOpen, setLightboxOpen] = useState(false);
+
   const allTags = [...new Set(essaysData.flatMap((essay) => essay.tags))];
+
   const filteredEssays = essaysData.filter((essay) => {
     const matchesSearch =
       essay.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -198,12 +198,15 @@ const Essay = () => {
     const matchesTag = filterTag ? essay.tags.includes(filterTag) : true;
     return matchesSearch && matchesTag;
   });
+
   const handleEssayClick = (essay) => {
     setSelectedEssay(essay);
   };
+
   const handleBackToList = () => {
     setSelectedEssay(null);
   };
+
   const openLightbox = () => setLightboxOpen(true);
   const closeLightbox = () => setLightboxOpen(false);
 
@@ -218,7 +221,7 @@ const Essay = () => {
       ) : (
         <>
           <div className="controls">
-            <div className="search-box">
+            {/* <div className="search-box">
               <input
                 type="text"
                 placeholder="Search essays..."
@@ -226,8 +229,9 @@ const Essay = () => {
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
               <i className="search-icon">🔍</i>
-            </div>
+            </div> */}
           </div>
+          <h1 className="publication-title">கட்டுரைகள்</h1>
           <div className="essay-card-container">
             {filteredEssays.map((essay) => (
               <EssayCard
@@ -257,6 +261,7 @@ const Essay = () => {
     </div>
   );
 };
+
 const EssayCard = ({ essay, onClick }) => {
   return (
     <div className="essay-card" onClick={onClick}>
@@ -267,27 +272,42 @@ const EssayCard = ({ essay, onClick }) => {
           className="card-image"
         />
       )}
-      {/* <div className="card__head">{essay.title}</div> */}
+      <div className="card-title-vertical">{essay.title}</div>
     </div>
   );
 };
+
 const EssayDetail = ({ essay, onBack, onImageClick }) => {
   return (
     <div className="essay-detail">
       <button className="back-button" onClick={onBack}>
         &larr; Back to all essays
       </button>
-
       <header>
         <h1>{essay.title}</h1>
+        <div className="essay-meta">
+          <span>By {essay.author}</span>
+          <span>{essay.publication}</span>
+          <span>{essay.date}</span>
+        </div>
       </header>
-
       {essay.imageUrl && (
         <figure className="essay-image" onClick={onImageClick}>
           <img src={essay.imageUrl} alt={essay.imageCaption || essay.title} />
           {essay.imageCaption && <figcaption>{essay.imageCaption}</figcaption>}
         </figure>
       )}
+      <div className="essay-content">
+        <p>{essay.excerpt}</p>
+        <p>{essay.content}</p>
+      </div>
+      <div className="essay-tags">
+        {essay.tags.map((tag, index) => (
+          <span key={index} className="tag">
+            {tag}
+          </span>
+        ))}
+      </div>
     </div>
   );
 };

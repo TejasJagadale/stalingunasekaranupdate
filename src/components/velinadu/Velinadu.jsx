@@ -2,22 +2,30 @@ import React, { useState, useEffect, useRef } from "react";
 import "../../styles/interview.css";
 
 const images = [
-  { src: "/petigal/img-1.jpg", caption: "Interview 1" },
-  { src: "/petigal/img-2.jpg", caption: "Interview 2" },
-  { src: "/petigal/img-3.jpg", caption: "Interview 3" },
-  { src: "/petigal/img-4.jpg", caption: "Interview 4" },
-  { src: "/petigal/img-5.jpg", caption: "Interview 5" },
-  { src: "/petigal/img-6.jpg", caption: "Interview 6" },
-  { src: "/petigal/img-7.jpg", caption: "Interview 7" },
-  { src: "/petigal/img-11.jpg", caption: "Interview 11" },
-  { src: "/petigal/img-12.jpg", caption: "Interview 12" },
-  { src: "/petigal/img-13.jpg", caption: "Interview 13" },
-  { src: "/petigal/img-14.jpg", caption: "Interview 14" },
-  { src: "/petigal/img-15.jpg", caption: "Interview 15" },
-  { src: "/petigal/img-16.jpg", caption: "Interview 16" }
+  { src: "/velinadu/img-1.jpg", caption: "Interview 1" },
+  { src: "/velinadu/img-2.jpg", caption: "Interview 2" },
+  { src: "/velinadu/img-3.jpg", caption: "Interview 3" },
+  { src: "/velinadu/img-4.jpg", caption: "Interview 4" },
+  { src: "/velinadu/img-5.jpg", caption: "Interview 5" },
+  { src: "/velinadu/img-6.jpg", caption: "Interview 6" },
+  { src: "/velinadu/img-7.jpg", caption: "Interview 7" },
+  { src: "/velinadu/img-8.jpg", caption: "Interview 8" },
+  { src: "/velinadu/img-11.jpg", caption: "Interview 11" },
+  { src: "/velinadu/img-12.jpg", caption: "Interview 12" },
+  { src: "/velinadu/img-13.jpg", caption: "Interview 13" },
+  { src: "/velinadu/img-15.jpg", caption: "Interview 15" },
+  { src: "/velinadu/img-16.jpg", caption: "Interview 16" },
+  { src: "/velinadu/img-17.jpg", caption: "Interview 17" },
+  { src: "/velinadu/img-19.jpg", caption: "Interview 19" },
+  { src: "/velinadu/img-20.jpg", caption: "Interview 20" },
+  { src: "/velinadu/img-21.jpg", caption: "Interview 21" },
+  { src: "/velinadu/img-22.jpg", caption: "Interview 22" },
+  { src: "/velinadu/img-23.jpg", caption: "Interview 23" },
+  { src: "/velinadu/img-24.jpg", caption: "Interview 24" },
+  { src: "/velinadu/img-25.jpg", caption: "Interview 25" }
 ];
 
-const Interview = () => {
+const Velinadu = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [loaded, setLoaded] = useState(false);
   const overlayRef = useRef(null);
@@ -47,10 +55,9 @@ const Interview = () => {
       setSelectedImage(null);
     }
   };
-
   return (
     <div className={`news-container ${loaded ? "loaded" : ""}`}>
-      <h1 className="publication-title">பேட்டிகள்</h1>
+      <h1 className="publication-title">வெளிநாட்டு சந்திப்புகள்</h1>
 
       <div className="gallery">
         {images.map((img, idx) => (
@@ -64,6 +71,7 @@ const Interview = () => {
               <img src={img.src} alt={img.caption} loading="lazy" />
               <div className="overlay"></div>
               <div className="caption">
+                {/* <h3>{img.caption}</h3> */}
                 <button className="view-btn">View</button>
               </div>
             </div>
@@ -96,4 +104,4 @@ const Interview = () => {
   );
 };
 
-export default Interview;
+export default Velinadu;

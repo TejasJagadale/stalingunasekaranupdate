@@ -1,10 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../../styles/home.css";
 import { Link } from "react-router-dom";
 
+// Import your images (adjust paths as needed)
+import img1 from "../../homeslide/img-7.jpg";
+import img2 from "../../homeslide/img-1.jpg";
+import img3 from "../../homeslide/img-2.jpg";
+import img4 from "../../homeslide/img-3.jpg";
+import img5 from "../../homeslide/img-5.jpg";
+
 const Home = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const images = [img1, img2, img3, img4, img5];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [images.length]);
+
   return (
-    <div class="content">
+    <div className="content">
       <div class="left-section">
         <div class="titlename">
           <h1>த. ஸ்டாலின் குணசேகரன்</h1>
@@ -21,7 +41,7 @@ const Home = () => {
               <h3 className="subtitles">படைப்புகள்</h3>
             </Link>
 
-            <Link class="icon1" to="/about">
+            <Link class="icon1" to="/about#tab3">
               <div class="iconcolor1">
                 <img src="./images/trophy.png" alt="" class="iconimage " />
               </div>
@@ -47,7 +67,19 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <img src="./images/img-7.jpg" alt="" class="homeimage" />
+
+      <div className="carousel-container">
+        {images.map((image, index) => (
+          <img
+            key={index}
+            src={image}
+            alt=""
+            className={`homeimage ${
+              index === currentImageIndex ? "active" : ""
+            }`}
+          />
+        ))}
+      </div>
       <img src="./images/profile.jpg" alt="" class="homeimage1" />
     </div>
   );

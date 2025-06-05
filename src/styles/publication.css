@@ -2,13 +2,26 @@
   padding: 1rem;
   /* max-width: 1200px; */
   margin: 0 auto;
+  background-color: #edf2fb;
 }
 
 .publication-title {
   text-align: left;
-  color: #333;
+  color: #274c77;
   margin-bottom: 2rem;
   font-size: 2rem;
+  position: relative; /* Needed for absolute positioning of the underline */
+  display: inline-block; /* Makes the width only as wide as the content */
+}
+
+.publication-title::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -10px; /* Adjust this value to position the underline properly */
+  width: 50%; /* Adjust this to control the length of the underline */
+  height: 3px; /* Thickness of the underline */
+  background-color: #a3cef1; /* Color of the underline */
 }
 
 .publication-layout {
@@ -32,7 +45,7 @@
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
-  background-color: #f9f9f9;
+  background-color: #fff;
   align-items: center;
 }
 
@@ -43,8 +56,9 @@
 }
 
 .book-item.active {
-  background-color: #e0e0e0;
+  background-color: #f0f0f0;
   border-left: 4px solid #36454f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Flip Book Styles */
@@ -225,6 +239,9 @@
 }
 
 @media (max-width: 768px) {
+  .publication-title {
+    font-size: 1.1rem;
+  }
   .readpub {
     display: flex;
     justify-content: flex-end;

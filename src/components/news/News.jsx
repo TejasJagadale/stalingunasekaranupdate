@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Modal } from "react-bootstrap";
+// import { Modal } from "react-bootstrap";
 import "../../styles/news.css";
 
 const images = [
@@ -57,170 +57,81 @@ const images = [
 ];
 
 const News = () => {
-  const [selectedImage, setSelectedImage] = useState(null);
-  const [loaded, setLoaded] = useState(false);
-  const [activeFilter, setActiveFilter] = useState("all");
-  const galleryRef = useRef(null);
-
-  useEffect(() => {
-    setLoaded(true);
-
-    // Intersection Observer for lazy loading and scroll animations
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    const galleryItems = galleryRef.current.querySelectorAll(".gallery-item");
-    galleryItems.forEach((item) => observer.observe(item));
-
-    return () => observer.disconnect();
-  }, []);
-
-  const filteredImages =
-    activeFilter === "all"
-      ? images
-      : images.filter((img) =>
-          img.caption.toLowerCase().includes(activeFilter)
-        );
-
-  return (
-    <section className="news-section">
-      <div className={`news-container ${loaded ? "loaded" : ""}`}>
-        {/* <div className="news-header">
-          <h1 className="news-title">
-            <span>Media Gallery</span>
-            <span className="title-decoration"></span>
-          </h1>
-          <p className="news-subtitle">Explore our collection of exclusive interviews and media coverage</p>
-          
-          <div className="filter-buttons">
-            <button 
-              className={`filter-btn ${activeFilter === "all" ? 'active' : ''}`}
-              onClick={() => setActiveFilter("all")}
-            >
-              All
-            </button>
-            <button 
-              className={`filter-btn ${activeFilter === "interview" ? 'active' : ''}`}
-              onClick={() => setActiveFilter("interview")}
-            >
-              Interviews
-            </button>
-          </div>
-        </div> */}
-
-        <div className="gallery" ref={galleryRef}>
-          {filteredImages.map((img, idx) => (
-            <div
-              key={idx}
-              className="gallery-item"
-              onClick={() => setSelectedImage(img)}
-              style={{ transitionDelay: `${idx * 0.05}s` }}
-            >
-              <div className="image-wrapper">
-                <img
-                  src={img.src}
-                  alt={img.caption}
-                  loading="lazy"
-                  className="gallery-image"
-                />
-                <div className="overlay"></div>
-                <div className="caption">
-                  <div className="caption-content">
-                    {/* <span className="date-badge">{img.date}</span> */}
-                    {/* <h3>{img.caption}</h3> */}
-                    <button className="view-btn">
-                      <span>View Details</span>
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M5 12H19M19 12L12 5M19 12L12 19"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Enhanced Modal */}
-        <Modal
-          show={selectedImage !== null}
-          onHide={() => setSelectedImage(null)}
-          size="xl"
-          centered
-          className="gallery-modal"
-          backdropClassName="modal-backdrop"
-          enforceFocus={true}
-          restoreFocus={true}
-          aria-labelledby="contained-modal-title-vcenter"
-        >
-          <Modal.Header closeButton className="modal-header">
-            <Modal.Title className="modal-title">
-              {selectedImage?.caption}
-              <span className="modal-subtitle">{selectedImage?.date}</span>
-            </Modal.Title>
-          </Modal.Header>
-          <Modal.Body className="modal-body">
-            <button
-              className="close-btn1"
-              onClick={() => setSelectedImage(null)}
-            >
-              X
-            </button>
-            {selectedImage && (
-              <div className="modal-image-container">
-                <img
-                  src={selectedImage.src}
-                  alt={selectedImage.caption}
-                  className="modal-image"
-                />
-              </div>
-            )}
-          </Modal.Body>
-          <Modal.Footer className="modal-footer">
-            <button className="download-btn">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M21 15V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V15M7 10L12 15M12 15L17 10M12 15V3"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              Download
-            </button>
-          </Modal.Footer>
-        </Modal>
-      </div>
-    </section>
-  );
-};
-
+   const [selectedImage, setSelectedImage] = useState(null);
+   const [loaded, setLoaded] = useState(false);
+   const overlayRef = useRef(null);
+ 
+   useEffect(() => {
+     setLoaded(true);
+   }, []);
+ 
+   useEffect(() => {
+     if (selectedImage) {
+       // Scroll to the overlay when an image is selected
+       overlayRef.current?.scrollIntoView({
+         behavior: "smooth",
+         block: "center"
+       });
+       // Prevent background scrolling
+       document.body.style.overflow = "hidden";
+     } else {
+       // Re-enable background scrolling
+       document.body.style.overflow = "auto";
+     }
+   }, [selectedImage]);
+ 
+   // Close modal when clicking outside image
+   const handleOverlayClick = (e) => {
+     if (e.target.classList.contains("image-overlay")) {
+       setSelectedImage(null);
+     }
+   };
+ 
+   return (
+     <div className={`news-container ${loaded ? "loaded" : ""}`}>
+       <h1 className="publication-title">பேட்டிகள்</h1>
+ 
+       <div className="gallery">
+         {images.map((img, idx) => (
+           <div
+             key={idx}
+             className="gallery-item"
+             onClick={() => setSelectedImage(img)}
+             style={{ transitionDelay: `${idx * 0.05}s` }}
+           >
+             <div className="image-wrapper">
+               <img src={img.src} alt={img.caption} loading="lazy" />
+               <div className="overlay"></div>
+               <div className="caption">
+                 <button className="view-btn">View</button>
+               </div>
+             </div>
+           </div>
+         ))}
+       </div>
+ 
+       {/* Custom Image Overlay */}
+       {selectedImage && (
+         <div
+           className="image-overlay"
+           onClick={handleOverlayClick}
+           ref={overlayRef}
+         >
+           <div className="image-modal">
+             <button
+               className="close-btn"
+               onClick={() => setSelectedImage(null)}
+             >
+               &times;
+             </button>
+             <div className="image-content">
+               <img src={selectedImage.src} alt={selectedImage.caption} />
+               <p className="image-caption">{selectedImage.caption}</p>
+             </div>
+           </div>
+         </div>
+       )}
+     </div>
+   );
+ };
 export default News;

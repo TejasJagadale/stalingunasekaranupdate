@@ -1,8 +1,8 @@
 /* src/components/ScrollToTopButton.css */
 .scroll-to-top {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 100px;
+  right: 39px;
   background-color: #36454f;
   color: white;
   border: none;
@@ -22,8 +22,8 @@
 @media (max-width: 768px) {
   .scroll-to-top {
     position: fixed;
-    /* bottom: 90px; */
-    right: 20px;
+    bottom: 90px;
+    right: 23px;
     background-color: #36454f;
     color: white;
     border: none;
@@ -45,8 +45,8 @@
 @media (max-width: 375px) {
   .scroll-to-top {
     position: fixed;
-    /* bottom: 90px; */
-    right: 20px;
+    bottom: 90px;
+    right: 25px;
     background-color: #36454f;
     color: white;
     border: none;

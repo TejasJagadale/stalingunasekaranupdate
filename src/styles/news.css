@@ -13,7 +13,7 @@
 .news-section {
   background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
   min-height: 100vh;
-  padding: 4rem 0;
+  /* padding: 4rem 0; */
 }
 
 /* News Container */

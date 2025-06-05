@@ -8,10 +8,38 @@ const About = () => {
   const location = useLocation();
 
   useEffect(() => {
+    // Hide all tabs first
+    document.querySelectorAll(".tab-content").forEach((tab) => {
+      tab.style.display = "none";
+    });
+    
+    // Remove active class from all links
+    document.querySelectorAll(".sidebar-link").forEach((link) => {
+      link.classList.remove("active");
+    });
+
     if (location.hash) {
       const element = document.querySelector(location.hash);
       if (element) {
+        // Show the target tab
+        element.style.display = "block";
+        
+        // Activate the corresponding link
+        const correspondingLink = document.querySelector(`.sidebar-link[href="${location.hash}"]`);
+        if (correspondingLink) {
+          correspondingLink.classList.add("active");
+        }
+        
+        // Smooth scroll to the element
         element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      // Default to first tab if no hash
+      const firstTab = document.querySelector(".tab-content");
+      const firstLink = document.querySelector(".sidebar-link");
+      if (firstTab && firstLink) {
+        firstTab.style.display = "block";
+        firstLink.classList.add("active");
       }
     }
   }, [location]);
@@ -45,14 +73,7 @@ const About = () => {
       link.addEventListener("click", handleTabClick);
     });
 
-    // Show the first tab and highlight the first link by default
-    const firstTab = document.querySelector(".tab-content");
-    const firstLink = document.querySelector(".sidebar-link");
-    if (firstTab && firstLink) {
-      firstTab.style.display = "block";
-      firstLink.classList.add("active");
-    }
-
+    // Cleanup
     return () => {
       sidebarLinks.forEach((link) => {
         link.removeEventListener("click", handleTabClick);
@@ -1090,12 +1111,15 @@ const About = () => {
             பாராட்டுமடல் பெற்று உற்சாகமடைந்தனர்.
           </p>
           <p class="tab-content1">
-            2005 முதல் கடந்த 14 ஆண்டுகளாக <span className="heading1"> 'ஈரோடு புத்தகத்திருவிழா' </span> என்ற பெயரில்
-            தேசியத் தரத்துடன் கூடிய மாநில அளவிலான மிகப்பெரும்
+            2005 முதல் கடந்த 14 ஆண்டுகளாக{" "}
+            <span className="heading1"> 'ஈரோடு புத்தகத்திருவிழா' </span> என்ற
+            பெயரில் தேசியத் தரத்துடன் கூடிய மாநில அளவிலான மிகப்பெரும்
             புத்தகக்கண்காட்சியை ஈரோடு நகரில் நடத்திவருகிறார். ஆண்டுதோறும் ஆகஸ்ட்
             மாதத்தில் 12 நாட்கள் நடைபெறும் இப்புத்தகத்திருவிழாவில் கடந்த ஆண்டு
-            (2018) மட்டும் 12 நாட்களில் சுமார் <span className="heading1"> 7 கோடி </span> ரூபாய்க்கும் மேல்
-            புத்தகங்கள் விற்பனையாகியுள்ளன. சுமார் <span className="heading1"> 7 லட்சத்திற்கும் </span> மேல் மக்கள்
+            (2018) மட்டும் 12 நாட்களில் சுமார்{" "}
+            <span className="heading1"> 7 கோடி </span> ரூபாய்க்கும் மேல்
+            புத்தகங்கள் விற்பனையாகியுள்ளன. சுமார்{" "}
+            <span className="heading1"> 7 லட்சத்திற்கும் </span> மேல் மக்கள்
             இப்புத்தகத்திருவிழாவிற்கு வந்து சென்றுள்ளனர். இப்புத்தகத் திருவிழா
             சிறிதளவும் வணிகத்தன்மையற்று நுழைவுக்கட்டணம் கூட இல்லாமல் முழுக்க
             சமூகமுன்னேற்றத்தை அடிப்படையாகக்கொண்டு நடத்தப்படுவதாகும்.

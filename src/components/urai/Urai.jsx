@@ -209,6 +209,7 @@ const Urai = () => {
       </nav>
 
       <main className="content-container">
+        <h1 className="publication-title">உரைகள்</h1>
         {activeTab === "quotes" && (
           <div className="quotes-section">
             {famousPerson.quotes.map((quote, index) => (

@@ -84,12 +84,12 @@
 }
 
 .content-tabs button:hover {
-  color: var(--primary-color);
+  color: #274c77;
 }
 
 .content-tabs button.active {
-  color: var(--secondary-color);
-  border-bottom: 3px solid var(--secondary-color);
+  color: #274c77;
+  border-bottom: 3px solid #274c77;
 }
 
 /* Quotes Section */

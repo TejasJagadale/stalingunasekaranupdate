@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation
+} from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import "./App.css";
 import Navbar from "./components/navbar/Navbar.jsx";
@@ -16,6 +21,8 @@ import Contact from "./components/contact/Contact.jsx";
 import Subhome from "./components/subhome/Subhome.jsx";
 import ScrollToTopButton from "./components/scrolltotop/scrollto.jsx";
 import ScrollToTop from "./components/autoscroll/Autoscroll.jsx";
+import Velinadu from "./components/velinadu/Velinadu.jsx";
+import WhatsAppButton from "./components/whatsapp/Whatsapp.jsx";
 
 // Replace the pageVariants with this simpler version
 const pageVariants = {
@@ -40,8 +47,8 @@ const AnimatedRoutes = () => {
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
-        <Route 
-          path="/" 
+        <Route
+          path="/"
           element={
             <motion.div
               initial="initial"
@@ -52,10 +59,10 @@ const AnimatedRoutes = () => {
             >
               <Home />
             </motion.div>
-          } 
+          }
         />
-        <Route 
-          path="/about" 
+        <Route
+          path="/about"
           element={
             <motion.div
               initial="initial"
@@ -66,10 +73,10 @@ const AnimatedRoutes = () => {
             >
               <About />
             </motion.div>
-          } 
+          }
         />
-        <Route 
-          path="/publication" 
+        <Route
+          path="/publication"
           element={
             <motion.div
               initial="initial"
@@ -80,10 +87,10 @@ const AnimatedRoutes = () => {
             >
               <Publication />
             </motion.div>
-          } 
+          }
         />
-        <Route 
-          path="/meeting" 
+        <Route
+          path="/meeting"
           element={
             <motion.div
               initial="initial"
@@ -94,10 +101,10 @@ const AnimatedRoutes = () => {
             >
               <Meeting />
             </motion.div>
-          } 
+          }
         />
-        <Route 
-          path="/essay" 
+        <Route
+          path="/essay"
           element={
             <motion.div
               initial="initial"
@@ -108,10 +115,10 @@ const AnimatedRoutes = () => {
             >
               <Essay />
             </motion.div>
-          } 
+          }
         />
-        <Route 
-          path="/urai" 
+        <Route
+          path="/urai"
           element={
             <motion.div
               initial="initial"
@@ -122,10 +129,10 @@ const AnimatedRoutes = () => {
             >
               <Urai />
             </motion.div>
-          } 
+          }
         />
-        <Route 
-          path="/interview" 
+        <Route
+          path="/interview"
           element={
             <motion.div
               initial="initial"
@@ -136,10 +143,24 @@ const AnimatedRoutes = () => {
             >
               <Interview />
             </motion.div>
-          } 
+          }
         />
-        <Route 
-          path="/news" 
+        <Route
+          path="/foreigninterview"
+          element={
+            <motion.div
+              initial="initial"
+              animate="in"
+              exit="out"
+              variants={pageVariants}
+              transition={pageTransition}
+            >
+              <Velinadu />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/news"
           element={
             <motion.div
               initial="initial"
@@ -150,10 +171,10 @@ const AnimatedRoutes = () => {
             >
               <News />
             </motion.div>
-          } 
+          }
         />
-        <Route 
-          path="/contact" 
+        <Route
+          path="/contact"
           element={
             <motion.div
               initial="initial"
@@ -164,10 +185,10 @@ const AnimatedRoutes = () => {
             >
               <Contact />
             </motion.div>
-          } 
+          }
         />
-        <Route 
-          path="/subhome" 
+        <Route
+          path="/subhome"
           element={
             <motion.div
               initial="initial"
@@ -178,7 +199,7 @@ const AnimatedRoutes = () => {
             >
               <Subhome />
             </motion.div>
-          } 
+          }
         />
       </Routes>
     </AnimatePresence>
@@ -188,12 +209,13 @@ const AnimatedRoutes = () => {
 function App() {
   return (
     <Router>
-      <ScrollToTop/>
+      <ScrollToTop />
       <div className="App">
         <Navbar />
         <AnimatedRoutes />
         <Footer />
         <ScrollToTopButton />
+        <WhatsAppButton/>
       </div>
     </Router>
   );

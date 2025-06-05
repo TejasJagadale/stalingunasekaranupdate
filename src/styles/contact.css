@@ -4,9 +4,6 @@
   /* flex-wrap: wrap; */
   gap: 2rem;
   padding: 2rem;
-  background-color: #f9fafb;
-  border-radius: 16px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .info-card {
@@ -16,7 +13,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-color: #36454f;
+  background-color: #274c77;
   color: white;
   width: 35%;
   padding: 2rem;
@@ -115,7 +112,7 @@ a:hover {
 .submit-btn {
   display: block;
   width: 100%;
-  background-color: #36454f;
+  background-color: #274c77;
   color: white;
   padding: 0.75rem;
   border: none;
@@ -125,7 +122,7 @@ a:hover {
 }
 
 .submit-btn:hover {
-  background-color: #616b71;
+  background-color: #4e8dd5;
 }
 
 @media (max-width: 768px) {

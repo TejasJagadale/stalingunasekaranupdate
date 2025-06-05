@@ -18,7 +18,7 @@
 /* Sidebar Styles */
 .sidebarmeeting {
   width: 250px;
-  background: #fff;
+  background-color: #bfdbf7;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 20px 0;
@@ -36,20 +36,21 @@
   background: transparent;
   cursor: pointer;
   font-size: 16px;
-  color: #555;
+  color: #274c77;
+  font-weight: bold;
   position: relative;
   transition: background-color 0.3s ease, color 0.3s ease, font-weight 0.3s ease;
 }
 
 .sidebar-tab:hover {
-  color: #2c3e50;
-  background: rgba(0, 0, 0, 0.03);
+  color: #fff;
+  background: #274c77;
 }
 
 .sidebar-tab.active {
-  color: black;
+  color: #fff;
   font-weight: bolder;
-  background-color: #f8f8f8;
+  background: #274c77;
 }
 
 /* Smooth transition for the indicator bar */
@@ -61,14 +62,14 @@
   height: 100%;
   width: 0;
   background: transparent;
-  border-radius: 0 4px 4px 0;
+  /* border-radius: 0 4px 4px 0; */
   transition: width 0.3s ease, background-color 0.3s ease;
 }
 
 /* When active, reveal the indicator smoothly */
 .sidebar-tab.active::after {
   width: 4px;
-  background: #36454f;
+  background: #fff;
 }
 
 /* Content Area */
@@ -140,7 +141,7 @@
 .person-info h3 {
   margin: 0;
   font-size: 24px;
-  color: #cc5500;
+  color: #072ac8;
 }
 
 .person-tag {
@@ -172,7 +173,7 @@
 }
 
 .accordion-item.active .accordion-icons .icon {
-  color: #cc5500;
+  color: #072ac8;
 }
 
 .accordion-content {
@@ -270,7 +271,7 @@
   .person-info h3 {
     margin: 0;
     font-size: 20px;
-    color: #cc5500;
+    color: #072ac8;
   }
   .text-content p {
     margin-bottom: 15px;

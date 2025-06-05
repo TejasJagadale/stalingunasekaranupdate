@@ -193,7 +193,7 @@ const Publication = () => {
 
   return (
     <section className="publication-container">
-      {/* <h1 className="publication-title">படைப்புகள்</h1> */}
+      <h1 className="publication-title">படைப்புகள்</h1>
       <div className="publication-layout">
         <div className="book-list">
           {books.map((book) => (

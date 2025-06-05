@@ -58,23 +58,14 @@ const Navbar = () => {
 
   return (
     <nav className="navbar1">
-      <style>{`
-        @font-face {
-          font-family: 'GIST-TMOTPadma';
-          src: url('/fonts/GIST-TMOTPadma.ttf') format('truetype');
-          font-weight: normal;
-          font-style: normal;
-        }
-      `}</style>
       <button className="menu-toggle1" onClick={toggleMenu}>
         {menuActive ? "✕" : "☰"}
       </button>
-
-      <ul
-        className={`nav-links1 ${menuActive ? "active" : ""}`}
-        style={{ fontFamily: "'GIST-TMOTPadma', serif" }}
-      >
-        <div style={{ marginTop: "70px", width: "100%" }}>
+      <div>
+        <ul
+          className={`nav-links1 ${menuActive ? "active" : ""}`}
+          style={{ fontFamily: "'GIST-TMOTPadma', serif" }}
+        >
           <li className={isActive("/") ? "active" : ""}>
             <Link to="/" onClick={closeMenu}>
               முகப்பு
@@ -118,6 +109,11 @@ const Navbar = () => {
                   செய்திகள்
                 </Link>
               </li>
+              <li className={isActive("/foreigninterview") ? "active" : ""}>
+                <Link to="/foreigninterview" onClick={closeMenu}>
+                  வெளிநாட்டு சந்திப்புகள்
+                </Link>
+              </li>
             </ul>
           </li>
           <li className={isActive("/contact") ? "active" : ""}>
@@ -125,15 +121,15 @@ const Navbar = () => {
               தொடர்புக்கு
             </Link>
           </li>
-        </div>
-      </ul>
+        </ul>
+      </div>
 
       <div
         className={`overlay1 ${menuActive ? "active" : ""}`}
         onClick={closeMenu}
       ></div>
       <div className="eachhead">
-        <div className="navtitle">{pageTitle}</div>
+        {/* <div className="navtitle">{pageTitle}</div> */}
 
         <div className="logo1">
           <Link to="/subhome">த.ஸ்டாலின் குணசேகரன்</Link>

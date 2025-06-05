@@ -1,5 +1,6 @@
 * {
   scrollbar-width: none;
+  
 }
 
 .homeimage {
@@ -10,6 +11,17 @@
 .App {
   text-align: center;
   scrollbar-width: none;
+}
+
+body{
+  background-color: #edf2fb;
+}
+
+@font-face {
+  font-family: "anilai";
+  src: url("/public/fonts/Aniezhai.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {

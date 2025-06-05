@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  /* background-color: #fef5e894; */
+  background-color: #edf2fb;
   position: relative;
 }
 
@@ -10,14 +10,14 @@
   flex: 1;
   padding: 20px;
   margin: 10px;
-  background: white;
   border-radius: 15px;
   transition: margin-right 0.3s;
+  background-color: #edf2fb;
 }
 
 .sidebar {
   width: 220px;
-  background-color: #fff;
+  background-color: #bfdbf7;
   padding-top: 20px;
   display: flex;
   flex-direction: column;
@@ -35,7 +35,8 @@
 .sidebar a {
   padding: 15px 20px;
   text-decoration: none;
-  color: #333;
+  color: #274c77;
+  font-weight: bold;
   border-bottom: 1px solid #34495e;
   transition: background 0.3s;
   text-align: left;
@@ -52,22 +53,22 @@
 /* Active link styling */
 .sidebar-link.active {
   background-color: #f0f0f0; /* Highlight background */
-  font-weight: bold;
+  font-weight: bolder;
   color: #36454f;
-  border-left: 4px solid #36454f; /* Optional: colored indicator */
+  border-left: 4px solid #fff; /* Optional: colored indicator */
 }
 
 .sidebar a.active {
-  color: #36454f;
+  color: #fff;
   font-weight: bolder;
-  background-color: #f8f8f8;
+  background-color: #274c77;
 }
 
 /* Hover and target styles */
 .sidebar a:hover,
 .sidebar a:target {
-  background-color: #f8f8f8;
-  color: black;
+  background-color: #274c77;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -84,14 +85,14 @@
   display: block;
   width: 80px;
   height: 4px;
-  background: #f39c12;
+  background: #274c77;
   /* margin: 10px auto 0; */
   border-radius: 2px;
 }
 
 .event {
   background: #ffffffcc;
-  border-left: 6px solid #f39c12;
+  border-left: 6px solid #274c77;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   padding: 20px;
@@ -139,7 +140,7 @@
 
 .tab-content1 {
   padding: 20px;
-  background-color: #f4fbff;
+  background-color: #fff;
   margin-bottom: 10px;
   border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -148,13 +149,14 @@
 
 .heading {
   font-size: 20px;
-  font-weight: bold;
-  color: #cc5500;
+  font-weight: bolder;
+  color: #072ac8;
 }
 
 .heading1 {
   font-size: 19px;
-  font-weight: bold;
+  font-weight: bolder;
+  color: #072ac8;
 }
 
 table {
@@ -172,7 +174,7 @@ td {
 }
 
 th {
-  background-color: #36454f;
+  background-color: #274c77;
   color: white;
 }
 

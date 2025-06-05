@@ -2,31 +2,46 @@
 body {
   margin: 0;
   min-height: 100vh;
-  /* background: #000; */
   font-family: sans-serif;
 }
 
 .essay-container {
   padding: 10px;
   margin: 20px;
-  /* overflow: hidden; */
+}
+
+.card-title-vertical {
+  position: absolute;
+  top: 7%;
+  right: 40px;
+  transform: translateY(-50%) rotate(270deg);
+  transform-origin: right top;
+  color: black;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgb(39, 76, 119, 0.8);
+  opacity: 0.8;
+  transition: all 0.5s ease;
+  white-space: nowrap;
+  font-size: 1.2em;
+  padding: 5px 0;
 }
 
 .essay-card-container {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* transform: skew(5deg); */
 }
 
 .essay-card {
+  display: flex;
   flex: 1;
   transition: all 1s ease-in-out;
   height: 75vmin;
   position: relative;
   cursor: pointer;
   border-radius: 10px;
+  overflow: hidden; /* Added to contain the blur effect */
+  position: relative;
 }
 
 .essay-card .card__head {
@@ -49,8 +64,25 @@ body {
   flex-grow: 10;
 }
 
+.essay-card:hover .card-title-vertical {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease;
+}
+
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 1s ease-in-out;
+  filter: blur(8px) grayscale(100%); /* Added blur effect by default */
+  transform: scale(1.1); /* Slightly zoomed to compensate for blur */
+}
+
 .essay-card:hover .card-image {
-  filter: grayscale(0);
+  filter: blur(0) grayscale(0); /* Remove blur and grayscale on hover */
+  transform: scale(1);
 }
 
 .essay-card:hover .card__head {
@@ -60,15 +92,6 @@ body {
   background: rgba(0, 0, 0, 0.5);
   font-size: 2em;
   transform: rotate(0deg) skew(-5deg);
-}
-
-.card-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: all 1s ease-in-out;
-  filter: grayscale(100%);
-  border-radius: 10px;
 }
 
 .essay-card:not(:last-child) {
@@ -94,7 +117,6 @@ body {
   padding: 0.5rem 1rem;
   border: 2px solid rgba(39, 39, 39, 0.75);
   border-radius: 20px;
-  /* background: rgba(0, 0, 0, 0.5); */
   color: white;
   font-size: 1rem;
 }
@@ -110,7 +132,6 @@ body {
 /* Essay Detail */
 .essay-detail {
   color: white;
-  /* max-width: 800px; */
   margin: 0 auto;
   padding: 2rem;
 }
@@ -181,75 +202,67 @@ body {
     height: 65vmin;
   }
 }
-
 @media (max-width: 992px) {
   .essay-card-container {
     flex-wrap: wrap;
   }
-  
   .essay-card {
     flex: 1 1 45%;
     height: 50vmin;
     margin-bottom: 1em;
   }
-  
   .essay-card:not(:last-child) {
     margin-right: 0.5em;
   }
-  
   .essay-card:hover {
     flex-grow: 1;
   }
 }
-
 @media (max-width: 768px) {
+  .card-title-vertical {
+    display: none;
+  }
+  .card-image {
+    filter: blur(0px) grayscale(0%);
+    transform: scale(1.1);
+  }
   .essay-container {
     padding: 5px;
     margin: 10px;
   }
-  
   .essay-card {
     flex: 1 1 100%;
     height: 70vmin;
     margin-right: 0 !important;
   }
-  
   .essay-card:hover .card__head {
     font-size: 1.5em;
   }
-  
   .essay-detail {
     padding: 1rem;
   }
-  
   .essay-detail h1 {
     font-size: 1.5rem;
   }
 }
-
 @media (max-width: 576px) {
   .essay-card {
     height: 60vmin;
   }
-  
   .search-box {
     max-width: 300px;
   }
-  
   .lightbox-content img {
     max-height: 60vh;
   }
 }
-
 @media (max-width: 400px) {
   .essay-card {
     height: 50vmin;
   }
-  
   .essay-card:hover .card__head {
     font-size: 1.2em;
   }
-  
   .search-box input {
     padding: 0.5rem;
     font-size: 0.9rem;
