@@ -26,7 +26,7 @@
 .navbar1 {
   background: #274c77;
   color: #e7ecef;
-  padding: 5px 20px;
+  padding: 20px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -205,6 +205,13 @@
     padding: 0.5rem 1rem;
     transition: all 0.3s ease;
     border-radius: 10px;
+  }
+  .dropdown-content1 li a {
+    display: block;
+    text-decoration: none;
+    margin-top: -10px;
+    color: #fff;
+    font-size: 0.9rem;
   }
   .navtitle {
     display: none;
