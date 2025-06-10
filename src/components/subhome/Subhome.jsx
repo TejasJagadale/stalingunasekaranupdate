@@ -16,11 +16,11 @@ const Subhome = () => {
       <nav class="bg-gray py-3 sticky top-0 z-10 shadow-md">
         <div class="container mx-auto">
           <div class="nav-tabs">
-            <a href="#seminar-section" class="nav-link active">
-              திரு.த.ஸ்டாலின் குணசேகரன்
-            </a>
             <a href="#stalin-section" class="nav-link">
-              த.ஸ்டாலின் குணசேகரன்
+              கட்டுரைகள்
+            </a>
+            <a href="#seminar-section" class="nav-link active">
+              காணொளிகள்
             </a>
             <Link to="/contact" class="nav-link">
               தொடர்புக்கு
@@ -31,7 +31,7 @@ const Subhome = () => {
 
       <main className="maincoversec">
         <div className="cover-section">
-          <section id="seminar-section" class="py-10">
+          <section class="py-10">
             <div class="container mx-auto">
               <h2 class="section-title">
                 ஆய்வுக் கட்டுரைகளுக்கான அறிவிப்பும் அழைப்பும்
@@ -39,16 +39,14 @@ const Subhome = () => {
 
               <div class="bg-white p-6 rounded-lg shadow-md mb-8">
                 <p class="mb-4">
-                  We are pleased to invite Scholars, Researchers, Professors and
-                  Academicians to present Research Papers for the International
-                  Seminar on the Literary Domain of Kavipperarasu Vairamuthu.
+                  'மக்கள் சிந்தனைப் பேரவை' -என்ற இவர் நிறுவிய பொது நல அமைப்பு
+                  ஈரோட்டைத் தலைமையிடமாக கொண்டு மாநிலந் தழுவிய முறையில் மிகச்
+                  சிறப்பாகச் செயல்பட்டு வருகிறது.
                 </p>
                 <p>
-                  This International Seminar aims to analyze, record and
-                  celebrate the literary domain of Kavipperarasu Vairamuthu, the
-                  eminent Tamil poet and India's great lyricist, who has been
-                  working incessantly on various genres of Tamil for the past 52
-                  years.
+                  சமூகவியல் லட்சியங்களை அடிப்படையாகக் கொண்ட இவ்வியக்கம்
+                  மாணவர்கள், இளைஞர்கள், ஆசிரியர்கள் மற்றும் பொதுமக்கள் மத்தியில்
+                  எழுச்சியையும் விழிப்புணர்வையும் ஏற்படுத்தி வருகிறது.
                 </p>
               </div>
 
@@ -347,7 +345,9 @@ const Subhome = () => {
               </div>
             </div>
 
-            <h3 class="text-2xl font-semibold mb-5">சந்திப்புகள்</h3>
+            <h3 class="text-2xl font-semibold mb-5">
+              சந்திப்புகள்
+            </h3>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
               <div class="meeting-card">
@@ -492,7 +492,7 @@ const Subhome = () => {
               <Link to="/meeting">See more...</Link>{" "}
             </div>
 
-            <h3 class="text-2xl font-semibold mb-5">காணொளிகள்</h3>
+            <h3 class="text-2xl font-semibold mb-5" id="seminar-section">காணொளிகள்</h3>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
               <div class="video-container">

@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "../../styles/home.css";
 import { Link } from "react-router-dom";
-import img1 from "../../homeslide/img-7.jpg";
-import img2 from "../../homeslide/img-1.jpg";
-import img3 from "../../homeslide/img-2.jpg";
-import img4 from "../../homeslide/img-3.jpg";
+import img1 from "../../homeslide/img-1.jpg";
+import img2 from "../../homeslide/img-2.jpg";
+import img3 from "../../homeslide/img-3.jpg";
+import img4 from "../../homeslide/img-4.jpg";
 import img5 from "../../homeslide/img-5.jpg";
+import img6 from "../../homeslide/img-6.jpg";
+import img7 from "../../homeslide/img-7.jpg";
 
 const Home = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = [img1, img2, img3, img4, img5];
+  const images = [img1, img2, img3, img4, img5, img6, img7];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -55,7 +57,7 @@ const Home = () => {
               <h2>20+</h2>
               <h3 className="subtitles">கட்டுரைகள்</h3>
             </Link>
-            <Link class="icon1" to="/about">
+            <Link class="icon1" to="/about#tab3">
               <div class="iconcolor1">
                 <img src="./images/article.png" alt="" class="iconimage " />
               </div>

@@ -112,6 +112,11 @@ const Meeting = () => {
     { id: "tab9", label: "சந்திப்பு புகைப்படங்கள்" }
   ];
 
+  const mobtabs = [
+    { id: "tab1", label: "All Meetings" },
+    { id: "tab9", label: "சந்திப்பு புகைப்படங்கள்" }
+  ];
+
   const meetings = [
     {
       id: 0,
@@ -235,22 +240,22 @@ const Meeting = () => {
   };
   return (
     <div className="meeting-page">
-      {/* Mobile Menu Toggle */}
-      {/* {isMobile && (
-        <div className="mobile-menu-toggle">
-          <select
-            value={activeTab}
-            onChange={(e) => setActiveTab(e.target.value)}
-            className="mobile-tab-selector"
-          >
-            {tabs.map((tab) => (
-              <option key={tab.id} value={tab.id}>
+      {/* Mobile Tabs - Horizontal Scrollable */}
+      {isMobile && (
+        <div className="mobile-tabs-container">
+          <div className="mobile-tabs-scroll">
+            {mobtabs.map((tab) => (
+              <button
+                key={tab.id}
+                className={`mobile-tab ${activeTab === tab.id ? "active" : ""}`}
+                onClick={() => setActiveTab(tab.id)}
+              >
                 {tab.label}
-              </option>
+              </button>
             ))}
-          </select>
+          </div>
         </div>
-      )} */}
+      )}
 
       <div className="meeting-container">
         {/* Desktop Sidebar */}

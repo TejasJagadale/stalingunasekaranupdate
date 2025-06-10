@@ -11,341 +11,341 @@ const Urai = () => {
     bio: "Nelson Rolihlahla Mandela (1918-2013) was a South African anti-apartheid revolutionary, political leader, and philanthropist who served as President of South Africa from 1994 to 1999. He was the country's first black head of state and the first elected in a fully representative democratic election.",
     quotes: [
       {
-        text: "அறிவியலாளர்களின் தியாக வாழ்க்கையை முழுமையாக ஆவணப்படுத்த வேண்டும் ",
+        text: "எழுத்துதான் எழுச்சியை தரும்",
         source: "Dhinamani",
         image: "/uraigal/img1.jpg",
-        date: "Sat 02, March 2019",
-        location: "Erode, TamilNadu"
+        date: "Thu 01, Feb 2018",
+        location: "Tiruchirapalli, TamilNadu"
       },
       {
-        text: "இறவாப் புகழுடைய நல்நூல்களை மக்களிடம் கொண்டு செல்வது அவசியம்",
+        text: "அறிவியலாளர்களின் தியாக வாழ்க்கையை முழுமையாக ஆவணப்படுத்த வேண்டும்",
         source: "Dhinamani",
         image: "/uraigal/img2.jpg",
-        date: "Sun 17 Feb 2019",
+        date: "Sat 02, Mar 2019",
         location: "Pudhukottai, TamilNadu"
       },
       {
-        text: "காந்தியடிகளை ‘மகாத்மா’ என அடையாளப்படுத்தியவர் தமிழர்",
+        text: "விடுதலை போரில் இந்துக்களுக்கும் இஸ்லாமியருக்கும் இணைந்தே களம் கண்டனர்",
         source: "Dhinamani",
         image: "/uraigal/img3.jpg",
-        date: "Thu 16 Jan 2019",
+        date: "Tue 04 Mar 2014",
         location: "Namakkal, TamilNadu"
       },
       {
-        text: "கற்பித்தலுக்கு இணையாக ஆய்வுக்கும் முக்கியத்துவம் தேவை",
+        text: "தன்னம்பிக்கையை ஏற்படுத்தும் ம.பொ.சி-யின் வரலாறு",
         source: "Dhinamani",
         image: "/uraigal/img4.jpg",
-        date: "Tue 18 Sept 2018",
+        date: "Wed 04 Oct 2017",
         location: "Tanjavur, TamilNadu"
+      },
+      {
+        text: "ஊழலற்ற இந்தியாவே இளைஞர்களின் கனவாக வேண்டும்",
+        source: "Dhinamani",
+        image: "/uraigal/img5.jpg",
+        date: "Sat 04 Nov 2017",
+        location: "Erode, India"
+      },
+      {
+        text: "ஓலைச்சுவடிகள் செல்லரித்து அழியும் அபாயம் ",
+        source: "Dhinamani",
+        image: "/uraigal/img6.jpg",
+        date: "Tue 05 Mar 2013",
+        location: "Rajapalayam, TamilNadu"
+      },
+      {
+        text: "ஓலைச்சுவடிகள் செல்லரித்து அழியும் அபாயம் ",
+        source: "Dhinamani",
+        image: "/uraigal/img6.jpg",
+        date: "Tue 05 Mar 2013",
+        location: "Rajapalayam, TamilNadu"
+      },
+      {
+        text: "ஆசிரியர்களே சமூதாயத்தின் சிற்பிகள்",
+        source: "Dhinamani",
+        image: "/uraigal/img7.jpg",
+        date: "Wed 30 Apr 2014",
+        location: "Erode, TamilNadu"
+      },
+      {
+        text: "ஆசிரியர்களே சமூதாயத்தின் சிற்பிகள்",
+        source: "Dhinamani",
+        image: "/uraigal/img7.jpg",
+        date: "Wed 30 Apr 2014",
+        location: "Erode, TamilNadu"
+      },
+      {
+        text: "சமூக பொறுப்புள்ள குடிமக்களை கல்வி நிலையங்கள் உருவாக்க வேண்டும்",
+        source: "Dhinamani",
+        image: "/uraigal/img9.jpg",
+        date: "Fri 08 Apr 2016",
+        location: "Erode, TamilNadu"
       },
       {
         text: "ஜாதி, மதத்துக்கு ஏற்றாற்போல் வரலாற்றை வளைப்பது பாவச் செயல்!",
         source: "Dhinamani",
-        image: "/uraigal/img5.jpg",
-        date: "Sun 9 Sept 2018",
-        location: "New Delhi, India"
-      },
-      {
-        text: "'புத்தக வாசிப்பை மையப்படுத்த வேண்டும்'",
-        source: "Dhinamani",
-        image: "/uraigal/img6.jpg",
-        date: "Mon 23 Apr 2018",
-        location: "Coimbatore, TamilNadu"
-      },
-      {
-        text: "நாட்டு நலப்பணித் திட்ட மாணவர்கள் தலைமைத் தகுதி மிக்கவர்களாக உருவெடுப்பர்",
-        source: "Dhinamani",
-        image: "/uraigal/img6.jpg",
-        date: "Thur 5 Apr 2018",
-        location: "Coimbatore, TamilNadu"
-      },
-      {
-        text: "சமூகப் பொறுப்புள்ள குடிமக்களை உருவாக்குவதே கல்வியின் நோக்கமாக இருக்க வேண்டும்",
-        source: "Dhinamani",
-        image: "/uraigal/img7.jpg",
-        date: "Sun 18 Mar 2018",
-        location: "Namakkal, TamilNadu"
-      },
-      {
-        text: "எழுத்துதான் எழுச்சியைத் தரும் : ஸ்டாலின் குணசேகரன்",
-        source: "Dhinamani",
-        image: "/uraigal/img8.jpg",
-        date: "Thu 1 Feb 2018",
-        location: "Trichy, TamilNadu"
-      },
-      {
-        text: "ஆளுமைகளின் வாழ்க்கை வரலாறு இளைஞர்களுக்கு நல்ல பாடமாக அமையும்",
-        source: "Dhinamani",
-        image: "/uraigal/img9.jpg",
-        date: "Fri 26 Jan 2018",
-        location: "Erode, TamilNadu"
-      },
-      {
-        text: "சமூகத்துக்காகப் பயன்படும் தனித் திறமைகள்தான் முழுமை பெறும்",
-        source: "Dhinamani",
         image: "/uraigal/img10.jpg",
-        date: "Sun 28 Jan 2018",
-        location: "Erode, TamilNadu"
+        date: "Sun 09 Sept 2018",
+        location: "New Delhi, TamilNadu"
       },
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "அடுத்த தலைமுறையை சமூக பொறுப்பாளர்களாக மாற்றவேண்டும்",
         source: "Dhinamani",
         image: "/uraigal/img11.jpg",
-        date: "Sat 30 Dec 2017",
-        location: "Erode, TamilNadu"
+        date: "Sun 08 Oct 2017",
+        location: "Thoothukudi, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "அரசியல் அமைப்பு சட்டம் குறித்து விழிப்புணர்வு அவசியம்",
         source: "Dhinamani",
         image: "/uraigal/img12.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "Sat 30 Jan 2010",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "‘கற்ற கல்வியை சமூகத்துக்குப் பயன்படுத்துவது மாணவர்களின் கடமை’",
         source: "Dhinamani",
         image: "/uraigal/img13.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "Fri 16 Feb 2018",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "காந்தியடிகளை 'மகாத்மா' என அடையாளப்படுத்தியவர் தமிழர்",
         source: "Dhinamani",
         image: "/uraigal/img14.jpg",
-        date: "Sat 30 Dec 2017",
-        location: "Erode, TamilNadu"
+        date: "Thur 17 Jan 2019",
+        location: "Namakkal, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "கற்பித்தலுக்கு இணையாக ஆய்வுக்கும் முக்கியத்துவம் தேவை",
         source: "Dhinamani",
         image: "/uraigal/img15.jpg",
-        date: "Sat 30 Dec 2017",
-        location: "Erode, TamilNadu"
+        date: "Tue 18 Sept 2018",
+        location: "Thanjavur, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "தாழ்வு மனப்பான்மைதான் வாழ்வின் வெற்றிக்குத் தடைக்கல்",
         source: "Dhinamani",
         image: "/uraigal/img16.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "Sun 18 Feb 2018",
         location: "Erode, TamilNadu"
       }
 
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "சமூகப் பொறுப்புள்ள குடிமக்களை உருவாக்குவதே கல்வியின் நோக்கமாக இருக்க வேண்டும்",
         source: "Dhinamani",
         image: "/uraigal/img17.jpg",
-        date: "Sat 30 Dec 2017",
-        location: "Erode, TamilNadu"
+        date: "Sun 18 Mar 2018",
+        location: "Namakkal, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "தமிழகத்தில் 2000 இடங்களில் அகழாய்வுக்கான வாய்ப்பு",
         source: "Dhinamani",
         image: "/uraigal/img18.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "Mar 19 2017",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "இந்திய மக்களின் மனதில் நீங்கா இடம்பெற்றவர் ஆர்தர் காட்டன்",
         source: "Dhinamani",
         image: "/uraigal/img19.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "Sat 20 May 2017",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "இந்தியாவை படிப்போம்! இந்தியாவை மாற்றுவோம்!",
         source: "Dhinamani",
         image: "/uraigal/img20.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "Tue 20 May 2014",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "உயர்கல்வியே ஒருநாட்டின் வளர்ச்சிக்கு உயிர்நாடி",
         source: "Dhinamani",
         image: "/uraigal/img21.jpg",
-        date: "Sat 30 Dec 2017",
-        location: "Erode, TamilNadu"
+        date: "21 Mar 2016",
+        location: "Namakkal, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "கம்பனும் பாரதியும் ஜீவாவுக்கு இரு கண்கள்: ஸ்டாலின் குணசேகரன்",
         source: "Dhinamani",
         image: "/uraigal/img22.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "24 Dec 2007",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "புத்தக வாசிப்பும் இளைய தலைமுறையும்",
         source: "Dhinamani",
         image: "/uraigal/img23.jpg",
-        date: "Sat 30 Dec 2017",
-        location: "Erode, TamilNadu"
+        date: "23 Aug 2016",
+        location: "Manapaarai, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "மாணவர்கள் விழிப்புணர்வை ஏற்படுத்த வேண்டும்",
         source: "Dhinamani",
         image: "/uraigal/img24.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "Fri 3 Jan 2014",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "சமுதாய கண்ணோட்டம் உள்ள பேச்சாளர்கள் உருவாக வேண்டும்",
         source: "Dhinamani",
         image: "/uraigal/img25.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "Sun 26 Nov 2017",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "ஆளுமைகளின் வாழ்க்கை வரலாறு இளைஞர்களுக்கு நல்ல பாடமாக அமையும்",
         source: "Dhinamani",
         image: "/uraigal/img26.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "Sat 27 Jan 2018",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "தமிழ் மொழியின் அடையாளம் திருக்குறள்",
         source: "Dhinamani",
         image: "/uraigal/img27.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "Thur 27 Oct 2018",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "இன்றைய கல்விமுறை நாட்டுப்பற்றை வளர்க்கவில்லை: ஸ்டாலின் குணசேகரன்",
         source: "Dhinamani",
         image: "/uraigal/img28.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "Fri 27 Oct 2017",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "இளைஞர்கள் சமூகப்பற்றை வளர்த்துக் கொள்ள வேண்டும்",
         source: "Dhinamani",
         image: "/uraigal/img29.jpg",
-        date: "Sat 30 Dec 2017",
-        location: "Erode, TamilNadu"
+        date: "27 Nov 2016",
+        location: "P.N.Paalayam, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "சமூகத்துக்காகப் பயன்படும் தனித் திறமைகள்தான் முழுமை பெறும்",
         source: "Dhinamani",
         image: "/uraigal/img30.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "Mon 29 Jan 2018",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "மாணவர்களின் தனித்திறன்கள் சமூகநோக்கத்துடன் வளர வேண்டும்",
         source: "Dhinamani",
         image: "/uraigal/img31.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "Mon 04 Apr 2016",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "மனிதநேயத்தை உருவாக்கும் இலக்கியத்தை படைக்க வேண்டும்",
         source: "Dhinamani",
         image: "/uraigal/img32.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "05 Jan 2010",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "மனித உரிமைச் சட்டங்கள் குறித்த விழிப்புணர்வை ஏற்படுத்த வேண்டும்",
         source: "Dhinamani",
         image: "/uraigal/img33.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "Thur 10 Mar 2016",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "மனிதனை பண்படுத்தும் இலக்கியங்கள்",
         source: "Dhinamani",
         image: "/uraigal/img34.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "01 Jan 2012",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "மனிதர்களுக்கான சேவையே கடவுளுக்கானது என்றவர் விவேகானந்தர்",
         source: "Dhinamani",
         image: "/uraigal/img35.jpg",
-        date: "Sat 30 Dec 2017",
-        location: "Erode, TamilNadu"
+        date: "Wed 19 Feb 2014",
+        location: "Namakkal, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "மது இல்லா தமிழகத்தை உருவாக்க வேண்டும்",
         source: "Dhinamani",
         image: "/uraigal/img36.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "Wed 30 Dec 2015",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "மூத்த குடிமக்களின் அறிவும், அனுபவமும் சமூகத்திற்கு முழுமையாக பயன்பட வேண்டும்",
         source: "Dhinamani",
         image: "/uraigal/img37.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "22 Dec 2011",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "முழுமையான மனிதனாக புத்தகங்களே துணை நிற்கும்",
         source: "Dhinamani",
         image: "/uraigal/img38.jpg",
-        date: "Sat 30 Dec 2017",
-        location: "Erode, TamilNadu"
+        date: "Mon 03 Feb 2014",
+        location: "Perambalur, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "திருமணத்திற்குச் சட்ட அங்கீகாரம் கொடுத்தவர் அண்ணா",
         source: "Dhinamani",
         image: "/uraigal/img39.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "27 Sept 2009",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "பாரம்பரியக் கலைகளை மீட்டுருவாக்கம் செய்வது அவசியம்",
         source: "Dhinamani",
         image: "/uraigal/img40.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "Mon 19 May 2014",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "பாரம்பரிய தொடர்ச்சிபற்றி மாணவர்கள் அறியவேண்டும்",
         source: "Dhinamani",
         image: "/uraigal/img41.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "09 Mar 2012",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "பன்முக ஆளுமை மிக்கவராக விளங்கியவர் நாமக்கல் கவிஞர்",
         source: "Dhinamani",
         image: "/uraigal/img42.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "Thur 20 Oct 2015",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "பொதுத்துறை வங்கிகளே மக்கள் வங்கிகள்",
         source: "Dhinamani",
         image: "/uraigal/img43.jpg",
         date: "Sat 30 Dec 2017",
@@ -353,7 +353,7 @@ const Urai = () => {
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "பொதுத்துறையைப் பாதுகாப்பதே இன்றைய உடனடிக் கடமை",
         source: "Dhinamani",
         image: "/uraigal/img44.jpg",
         date: "Sat 30 Dec 2017",
@@ -361,99 +361,99 @@ const Urai = () => {
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "‘புதிய இந்தியாவை உருவாக்க மாணவர்கள் முயற்சி மேற்கொள்ள வேண்டும்’",
         source: "Dhinamani",
         image: "/uraigal/img45.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "Sun 22 Nov 2015",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "இறவாப் புகழுடைய நல்நூல்களை மக்களிடம் கொண்டு செல்வது அவசியம்",
         source: "Dhinamani",
         image: "/uraigal/img46.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "Sun 17 Feb 2019",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "சமுதாய மாற்றத்திற்கு அடித்தளமிடுபவை புத்தகங்களே",
         source: "Dhinamani",
         image: "/uraigal/img47.jpg",
-        date: "Sat 30 Dec 2017",
-        location: "Erode, TamilNadu"
+        date: "",
+        location: "Chennai, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "நதிகள் இணைப்பின் முன்னோடி காலிங்கராயன்",
         source: "Dhinamani",
         image: "/uraigal/img48.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "21 Sept 2016",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "சிரமம் இல்லாமல் சிகரம் இல்லை ",
         source: "Dhinamani",
         image: "/uraigal/img49.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "23 Feb 2012",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "ஆசிரியர்கள் மாணவர்களை நல்வழிப்படுத்தவேண்டும் ",
         source: "Dhinamani",
         image: "/uraigal/img50.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "Sun 2 Oct 2016",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "தகவல்பெறும் உரிமைச் சட்டத்தால் ஊழல் குறையும்",
         source: "Dhinamani",
         image: "/uraigal/img51.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "Fri 28 Jan 2011",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "'தலைசிறந்த குடிமக்களை உருவாக்கிக்கொடுப்பது கல்வி நிறுவனங்களின் கடமை'",
         source: "Dhinamani",
         image: "/uraigal/img52.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "Thur 03 Feb 2011",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "தமிழ் மொழியை அறிவியல் பூர்வமாக பரப்ப வேண்டும் ",
         source: "Dhinamani",
         image: "/uraigal/img53.jpg",
         date: "Sat 30 Dec 2017",
-        location: "Erode, TamilNadu"
+        location: "Tirukovilur, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "தேசத் தலைவர்களை சாதிச் சிறைகளிலிருந்து மீட்க வேண்டும்",
         source: "Dhinamani",
         image: "/uraigal/img54.jpg",
-        date: "Sat 30 Dec 2017",
+        date: "31 Jan 2013",
         location: "Erode, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "உயர்கல்வியே ஒரு நாட்டிற்கு உயிர்நாடி",
         source: "Dhinamani",
         image: "/uraigal/img55.jpg",
-        date: "Sat 30 Dec 2017",
-        location: "Erode, TamilNadu"
+        date: "21 Mar 2016",
+        location: "Namakkal, TamilNadu"
       }
       ,
       {
-        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        text: "ஊழலற்ற சமுதாயத்தை உருவாக்கும் பொறுப்பு இளைஞர்களிடமே உள்ளது",
         source: "Dhinamani",
         image: "/uraigal/img56.jpg",
-        date: "Sat 30 Dec 2017",
-        location: "Erode, TamilNadu"
+        date: "13 Mar",
+        location: "Kumarapalayam, TamilNadu"
       }
     ],
     timeline: [
