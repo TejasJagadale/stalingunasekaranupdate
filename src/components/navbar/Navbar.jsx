@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState } from "react";
 import "../../styles/navbar.css";
 import { Link, useLocation } from "react-router-dom";
 
@@ -6,30 +6,30 @@ const Navbar = () => {
   const [menuActive, setMenuActive] = useState(false);
   const location = useLocation();
 
-  const pageTitle = useMemo(() => {
-    switch (location.pathname) {
-      case "/":
-        return "முகப்பு";
-      case "/about":
-        return "பற்றி";
-      case "/publication":
-        return "படைப்புகள்";
-      case "/meeting":
-        return "சந்திப்புகள்";
-      case "/essay":
-        return "கட்டுரைகள்";
-      case "/urai":
-        return "உரைகள்";
-      case "/interview":
-        return "பேட்டிகள்";
-      case "/news":
-        return "செய்திகள்";
-      case "/contact":
-        return "தொடர்பு";
-      default:
-        return "";
-    }
-  }, [location.pathname]);
+  // const pageTitle = useMemo(() => {
+  //   switch (location.pathname) {
+  //     case "/":
+  //       return "முகப்பு";
+  //     case "/about":
+  //       return "பற்றி";
+  //     case "/publication":
+  //       return "படைப்புகள்";
+  //     case "/meeting":
+  //       return "சந்திப்புகள்";
+  //     case "/essay":
+  //       return "கட்டுரைகள்";
+  //     case "/urai":
+  //       return "உரைகள்";
+  //     case "/interview":
+  //       return "பேட்டிகள்";
+  //     case "/news":
+  //       return "செய்திகள்";
+  //     case "/contact":
+  //       return "தொடர்பு";
+  //     default:
+  //       return "";
+  //   }
+  // }, [location.pathname]);
 
   const toggleMenu = () => {
     setMenuActive(!menuActive);
@@ -45,16 +45,16 @@ const Navbar = () => {
   };
 
   // Function to check if any dropdown item is active
-  const isDropdownActive = () => {
-    const dropdownPaths = [
-      "/meeting",
-      "/essay",
-      "/urai",
-      "/interview",
-      "/news"
-    ];
-    return dropdownPaths.some((path) => location.pathname === path);
-  };
+  // const isDropdownActive = () => {
+  //   const dropdownPaths = [
+  //     "/meeting",
+  //     "/essay",
+  //     "/urai",
+  //     "/interview",
+  //     "/news"
+  //   ];
+  //   return dropdownPaths.some((path) => location.pathname === path);
+  // };
 
   return (
     <nav className="navbar1">

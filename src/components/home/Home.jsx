@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../../styles/home.css";
 import { Link } from "react-router-dom";
-
-// Import your images (adjust paths as needed)
 import img1 from "../../homeslide/img-7.jpg";
 import img2 from "../../homeslide/img-1.jpg";
 import img3 from "../../homeslide/img-2.jpg";

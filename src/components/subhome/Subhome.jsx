@@ -88,148 +88,6 @@ const Subhome = () => {
                   <Link to="/publication">See more</Link>
                 </div>
               </div>
-
-              {/* <div class="topic-section">
-                <h3 class="topic-title">திரைப்பாடல்கள்</h3>
-                <ul class="topic-list">
-                  <li>
-                    Dominance of poetry in the film songs of Vairamuthu
-                    (வைரமுத்து திரைப்பாடல்களில் கவிதை ஆளுமை)
-                  </li>
-                  <li>
-                    Songs of Vairamuthu that broke the tradition (திரை மரபுகளை
-                    உடைத்த வைரமுத்துவின் பாடல்கள்)
-                  </li>
-                  <li>
-                    Dominance of Science in the songs of Vairamuthu (வைரமுத்து
-                    பாடல்களில் அறிவியல் ஆளுமை)
-                  </li>
-                  <li>
-                    Contribution of Vairamuthu to the Vocabulary of Cine songs
-                    (திரைப்பாடல்களில் வைரமுத்துவின் சொற்கொடை)
-                  </li>
-                  <li>
-                    Songs of Vairamuthu and Sangam literature (வைரமுத்து
-                    பாடல்களும் சங்க இலக்கியமும்)
-                  </li>
-                  <li>
-                    Feminism in the songs of Vairamuthu (வைரமுத்து பாடல்களில்
-                    பெண்ணியம்)
-                  </li>
-                  <li>
-                    Predominant voice in the songs of Vairamuthu ( வைரமுத்து
-                    பாடல்களில் உரத்த குரல்)
-                  </li>
-                  <li>
-                    Voice of Love in the songs of Vairamuthu (வைரமுத்து
-                    பாடல்களில் காதல் குரல்)
-                  </li>
-                  <li>
-                    Aligning with tradition and breaking tradition in the songs
-                    of Vairamuthu (வைரமுத்து பாடல்களில் மரபு சாரலும் மரபு
-                    மீறலும்)
-                  </li>
-                  <li>
-                    Never heard before male voice in the songs of Vairamuthu
-                    (வைரமுத்து பாடல்களில் இதுவரை கேளாத ஆண்குரல்)
-                  </li>
-                  <li>
-                    Never heard before female voice ever in the songs of
-                    Vairamuthu (வைரமுத்து பாடல்களில் இதுவரை கேளாத பெண்குரல்)
-                  </li>
-                </ul>
-              </div>
-
-              <div class="topic-section">
-                <h3 class="topic-title">கட்டுரை உலகம்</h3>
-                <ul class="topic-list">
-                  <li>
-                    Thamizhatruppadai and History of Tamil literature
-                    (தமிழாற்றுப்படையும் தமிழ் இலக்கிய வரலாறும்)
-                  </li>
-                  <li>
-                    Unique visions in the articles of Vairamuthu (வைரமுத்து
-                    கட்டுரைகள் தரும் புது வெளிச்சம்)
-                  </li>
-                  <li>
-                    The style of Tamil in the prose of Vairamuthu (வைரமுத்து
-                    உரைநடையில் தமிழ்நடை)
-                  </li>
-                  <li>
-                    Unexplored views in the articles of Vairamuthu (வைரமுத்து
-                    கட்டுரைகளில் முன்னெவரும் பாராத பார்வை)
-                  </li>
-                  <li>
-                    Role of Vairamuthu in the field of Research (ஆய்வுக்களத்தில்
-                    வைரமுத்துவின் பங்கு)
-                  </li>
-                  <li>
-                    World Tamils and the Tamil of Vairamuthu (உலகத் தமிழர்களும்
-                    வைரமுத்துவின் தமிழும்)
-                  </li>
-                </ul>
-              </div> */}
-
-              {/* <div class="bg-gray-50 p-5 rounded-lg shadow-sm mb-6">
-                <h3 class="font-bold text-xl mb-3">Selection Process</h3>
-                <hr class="mb-4" />
-                <ul class="space-y-2 pl-5 list-disc">
-                  <li>All articles will undergo a peer review process.</li>
-                  <li>Only 50 papers will be selected for publication.</li>
-                  <li>
-                    Out of which 20 Articles will be selected to be read out in
-                    the seminar.
-                  </li>
-                  <li>The decision of the selection committee is final.</li>
-                </ul>
-              </div>
-
-              <div class="bg-gray-50 p-5 rounded-lg shadow-sm mb-6">
-                <h3 class="font-bold text-xl mb-3">Publication</h3>
-                <hr class="mb-4" />
-                <p>Selected articles will appear in the Research journal.</p>
-              </div>
-
-              <div class="bg-gray-50 p-5 rounded-lg shadow-sm mb-6">
-                <h3 class="font-bold text-xl mb-3">Register</h3>
-                <hr class="mb-4" />
-                <p>
-                  Information regarding registration fee and the procedure will
-                  be communicated after the acceptance of the abstract of
-                  article.
-                </p>
-                <div class="mt-4 p-3 bg-gray-200 rounded">
-                  <p>
-                    For more information, send an email to{" "}
-                    <a
-                      href="mailto:vairamuthiyam@gmail.com"
-                      class="text-blue-600 hover:underline"
-                    >
-                      vairamuthiyam@gmail.com
-                    </a>
-                    .
-                  </p>
-                </div>
-              </div>
-
-              <div class="bg-gray-50 p-5 rounded-lg shadow-sm mb-6">
-                <h3 class="font-bold text-xl mb-3">Seminar Co-ordinator</h3>
-                <hr class="mb-4" />
-                <div class="pl-5">
-                  <h4 class="font-semibold text-lg">M. Vediyappan</h4>
-                  <p>Discovery Publications</p>
-                </div>
-              </div>
-
-              <div class="bg-gray-50 p-5 rounded-lg shadow-sm mb-6">
-                <h3 class="font-bold text-xl mb-3">Organisation</h3>
-                <hr class="mb-4" />
-                <div class="pl-5">
-                  <h4 class="font-semibold text-lg">
-                    Kavignar Vairamthu Educational Trust
-                  </h4>
-                </div>
-              </div> */}
             </div>
           </section>
           <section>
@@ -262,30 +120,6 @@ const Subhome = () => {
                   </li>
                 </ul>
               </div>
-              {/* <div class="bg-gray-50 p-5 rounded-lg shadow-sm mb-6">
-                <h3 class="font-bold text-xl mb-3">Full Article format</h3>
-                <hr class="mb-4" />
-                <ul class="space-y-2">
-                  <li>
-                    <strong>Length:</strong> 5 A4 pages
-                  </li>
-                  <li>
-                    <strong>Maximum No. of Words:</strong> 1,000 words
-                  </li>
-                  <li>
-                    <strong>Font:</strong> Arial Unicode
-                  </li>
-                  <li>
-                    <strong>Font Size:</strong> 12
-                  </li>
-                  <li>
-                    <strong>Line Spacing:</strong> 1.5
-                  </li>
-                  <li>
-                    <strong>Language:</strong> Tamil
-                  </li>
-                </ul>
-              </div> */}
               <div class="bg-gray-50 p-5 rounded-lg shadow-sm mb-6">
                 <h3 class="font-bold text-xl mb-3">Distinguished Books</h3>
                 <hr class="mb-4" />
@@ -513,50 +347,6 @@ const Subhome = () => {
               </div>
             </div>
 
-            {/* <h3 class="text-2xl font-semibold mb-5">புத்தகங்கள்</h3>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
-              <div class="bg-white p-5 rounded-lg shadow-md">
-                <h4 class="font-semibold text-lg mb-2">
-                  ஜீவா - முழக்கம் (1997)
-                </h4>
-                <p class="text-sm">
-                  இந்திய சுதந்திர தினம் ஐம்பதாண்டுப் பொன் விழாவை முன்னிட்டு
-                  'ஜீவா முழக்கம் ....
-                </p>
-              </div>
-
-              <div class="bg-white p-5 rounded-lg shadow-md">
-                <h4 class="font-semibold text-lg mb-2">
-                  தேசவிடுதலையும் தியாகச் சுடர்களும் (1999)
-                </h4>
-                <p class="text-sm">
-                  இந்நூல் 'ஜீவா முழக்கம்' -இதழின் சுதந்திர தினப் பொன்விழா மலரில்
-                  இடம் பெற்றுள்ள முக்கிய கட்டுரைகளை உள்ளடக்கிய ...
-                </p>
-              </div>
-
-              <div class="bg-white p-5 rounded-lg shadow-md">
-                <h4 class="font-semibold text-lg mb-2">
-                  விடுதலை வேள்வியில் தமிழகம் (2001)
-                </h4>
-                <p class="text-sm">
-                  சுமார் ஆறாண்டுகள் தனது வழக்குரைஞர் தொழிலையும் பொருட்படுத்தாது
-                  த. ஸ்டாலின் குணசேகரன் மேற்கொண்ட ....
-                </p>
-              </div>
-
-              <div class="bg-white p-5 rounded-lg shadow-md">
-                <h4 class="font-semibold text-lg mb-2">
-                  வரலாற்றுப் பாதையில் (2007)
-                </h4>
-                <p class="text-sm">
-                  த. ஸ்டாலின் குணசேகரன் அவர்களால் 'ஜனசக்தி'-நாளிதழில் நாளுக்கு
-                  ஒரு கட்டுரைவிதம் நூறு இதழ்களில் ....
-                </p>
-              </div>
-            </div> */}
-
             <h3 class="text-2xl font-semibold mb-5">சந்திப்புகள்</h3>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
@@ -576,6 +366,7 @@ const Subhome = () => {
                     href="https://www.tstalingunasekaran.com/assets/pdf/meetings/ilayaraja.pdf"
                     class="read-more"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     மேலும் பார்க்க <i class="fas fa-arrow-right"></i>
                   </a>
@@ -597,6 +388,7 @@ const Subhome = () => {
                     href="https://www.tstalingunasekaran.com/assets/pdf/meetings/jeyakanthan.pdf"
                     class="read-more"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     மேலும் பார்க்க <i class="fas fa-arrow-right"></i>
                   </a>
@@ -619,6 +411,7 @@ const Subhome = () => {
                     href="https://www.tstalingunasekaran.com/assets/pdf/meetings/karunanithi.pdf"
                     class="read-more"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     மேலும் பார்க்க <i class="fas fa-arrow-right"></i>
                   </a>
@@ -641,6 +434,7 @@ const Subhome = () => {
                     href="https://www.tstalingunasekaran.com/assets/pdf/meetings/kulanthai.pdf"
                     class="read-more"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     மேலும் பார்க்க <i class="fas fa-arrow-right"></i>
                   </a>
@@ -663,6 +457,7 @@ const Subhome = () => {
                     href="https://www.tstalingunasekaran.com/assets/pdf/meetings/mayandi.pdf"
                     class="read-more"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     மேலும் பார்க்க <i class="fas fa-arrow-right"></i>
                   </a>
@@ -685,6 +480,7 @@ const Subhome = () => {
                     href="https://www.tstalingunasekaran.com/assets/pdf/meetings/ggg.pdf"
                     class="read-more"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     மேலும் பார்க்க <i class="fas fa-arrow-right"></i>
                   </a>
@@ -693,7 +489,7 @@ const Subhome = () => {
             </div>
             <div className="subseemore">
               {" "}
-              <Link to="/meetings">See more...</Link>{" "}
+              <Link to="/meeting">See more...</Link>{" "}
             </div>
 
             <h3 class="text-2xl font-semibold mb-5">காணொளிகள்</h3>
@@ -734,6 +530,7 @@ const Subhome = () => {
               <a
                 href="http://www.youtube.com/@tstalingunasekaran"
                 target="_blank"
+                rel="noreferrer"
               >
                 See more...
               </a>{" "}

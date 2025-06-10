@@ -1,5 +1,14 @@
 import React from "react";
-import { Mail, MapPin, Phone, Clock, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import {
+  Mail,
+  MapPin,
+  Phone,
+  Clock,
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram
+} from "lucide-react";
 import "../../styles/contact.css";
 
 const Contact = () => {
@@ -41,7 +50,9 @@ const Contact = () => {
           <Phone className="icon" />
           <div className="left">
             <h3>தொலைபேசி</h3>
-            <a className="cnt" href="tel:04242269186">0424 - 2269186</a>
+            <a className="cnt" href="tel:04242269186">
+              0424 - 2269186
+            </a>
           </div>
         </div>
 
@@ -66,10 +77,38 @@ const Contact = () => {
         </div>
 
         <div className="social-icons">
-          <a className="cnt" href="#"><Facebook /></a>
-          <a className="cnt" href="#"><Twitter /></a>
-          <a className="cnt" href="#"><Linkedin /></a>
-          <a className="cnt" href="#"><Instagram /></a>
+          <a
+            className="cnt"
+            href="https://facebook.com/yourpage"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Facebook />
+          </a>
+          <a
+            className="cnt"
+            href="https://twitter.com/yourhandle"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Twitter />
+          </a>
+          <a
+            className="cnt"
+            href="https://linkedin.com/yourprofile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Linkedin />
+          </a>
+          <a
+            className="cnt"
+            href="https://instagram.com/yourprofile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Instagram />
+          </a>
         </div>
       </div>
 
@@ -101,7 +140,9 @@ const Contact = () => {
             <textarea id="message" name="message" rows="4" required></textarea>
           </div>
 
-          <button type="submit" className="submit-btn">அனுப்பு</button>
+          <button type="submit" className="submit-btn">
+            அனுப்பு
+          </button>
         </form>
       </div>
     </section>

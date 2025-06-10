@@ -262,6 +262,11 @@
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+  .sidebarmeeting{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
   .accordion-container {
     margin-top: 0px;
   }

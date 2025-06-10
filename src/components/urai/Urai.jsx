@@ -13,84 +13,445 @@ const Urai = () => {
       {
         text: "அறிவியலாளர்களின் தியாக வாழ்க்கையை முழுமையாக ஆவணப்படுத்த வேண்டும் ",
         source: "Dhinamani",
-        image: "/uraigal/img-1 (1).jpg",
+        image: "/uraigal/img1.jpg",
         date: "Sat 02, March 2019",
         location: "Erode, TamilNadu"
       },
       {
         text: "இறவாப் புகழுடைய நல்நூல்களை மக்களிடம் கொண்டு செல்வது அவசியம்",
         source: "Dhinamani",
-        image: "/uraigal/img-2.jpg",
+        image: "/uraigal/img2.jpg",
         date: "Sun 17 Feb 2019",
         location: "Pudhukottai, TamilNadu"
       },
       {
         text: "காந்தியடிகளை ‘மகாத்மா’ என அடையாளப்படுத்தியவர் தமிழர்",
         source: "Dhinamani",
-        image: "/uraigal/img-3.jpg",
+        image: "/uraigal/img3.jpg",
         date: "Thu 16 Jan 2019",
         location: "Namakkal, TamilNadu"
       },
       {
         text: "கற்பித்தலுக்கு இணையாக ஆய்வுக்கும் முக்கியத்துவம் தேவை",
         source: "Dhinamani",
-        image: "/uraigal/img-4.jpg",
+        image: "/uraigal/img4.jpg",
         date: "Tue 18 Sept 2018",
         location: "Tanjavur, TamilNadu"
       },
       {
         text: "ஜாதி, மதத்துக்கு ஏற்றாற்போல் வரலாற்றை வளைப்பது பாவச் செயல்!",
         source: "Dhinamani",
-        image: "/uraigal/img-5.jpg",
+        image: "/uraigal/img5.jpg",
         date: "Sun 9 Sept 2018",
         location: "New Delhi, India"
       },
       {
         text: "'புத்தக வாசிப்பை மையப்படுத்த வேண்டும்'",
         source: "Dhinamani",
-        image: "/uraigal/img-6.jpg",
+        image: "/uraigal/img6.jpg",
         date: "Mon 23 Apr 2018",
         location: "Coimbatore, TamilNadu"
       },
       {
         text: "நாட்டு நலப்பணித் திட்ட மாணவர்கள் தலைமைத் தகுதி மிக்கவர்களாக உருவெடுப்பர்",
         source: "Dhinamani",
-        image: "/uraigal/img-6.jpg",
+        image: "/uraigal/img6.jpg",
         date: "Thur 5 Apr 2018",
         location: "Coimbatore, TamilNadu"
       },
       {
         text: "சமூகப் பொறுப்புள்ள குடிமக்களை உருவாக்குவதே கல்வியின் நோக்கமாக இருக்க வேண்டும்",
         source: "Dhinamani",
-        image: "/uraigal/img-7.jpg",
+        image: "/uraigal/img7.jpg",
         date: "Sun 18 Mar 2018",
         location: "Namakkal, TamilNadu"
       },
       {
         text: "எழுத்துதான் எழுச்சியைத் தரும் : ஸ்டாலின் குணசேகரன்",
         source: "Dhinamani",
-        image: "/uraigal/img-11.jpg",
+        image: "/uraigal/img8.jpg",
         date: "Thu 1 Feb 2018",
         location: "Trichy, TamilNadu"
       },
       {
         text: "ஆளுமைகளின் வாழ்க்கை வரலாறு இளைஞர்களுக்கு நல்ல பாடமாக அமையும்",
         source: "Dhinamani",
-        image: "/uraigal/img-12.jpg",
+        image: "/uraigal/img9.jpg",
         date: "Fri 26 Jan 2018",
         location: "Erode, TamilNadu"
       },
       {
         text: "சமூகத்துக்காகப் பயன்படும் தனித் திறமைகள்தான் முழுமை பெறும்",
         source: "Dhinamani",
-        image: "/uraigal/img-13.jpg",
+        image: "/uraigal/img10.jpg",
         date: "Sun 28 Jan 2018",
         location: "Erode, TamilNadu"
       },
       {
         text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
         source: "Dhinamani",
-        image: "/uraigal/img-14.jpg",
+        image: "/uraigal/img11.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img12.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img13.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img14.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img15.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img16.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img17.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img18.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img19.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img20.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img21.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img22.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img23.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img24.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img25.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img26.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img27.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img28.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img29.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img30.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img31.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img32.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img33.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img34.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img35.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img36.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img37.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img38.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img39.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img40.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img41.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img42.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img43.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img44.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img45.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img46.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img47.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img48.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img49.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img50.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img51.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img52.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img53.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img54.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img55.jpg",
+        date: "Sat 30 Dec 2017",
+        location: "Erode, TamilNadu"
+      }
+      ,
+      {
+        text: "வாழ்க்கைக்கு வழிகாட்டும் வல்லமை மிக்கது வரலாறு",
+        source: "Dhinamani",
+        image: "/uraigal/img56.jpg",
         date: "Sat 30 Dec 2017",
         location: "Erode, TamilNadu"
       }
@@ -173,6 +534,45 @@ const Urai = () => {
       {
         image: "/photos/img-14.jpg",
         caption: "Speaking at the United Nations, 1994"
+      },
+      {
+        image: "/photos/img-15.jpg",
+        caption:
+          "Mandela voting in South Africa's first democratic election, 1994"
+      },
+      {
+        image: "/photos/img-16.jpg",
+        caption: "With F.W. de Klerk after receiving Nobel Peace Prize"
+      },
+      {
+        image: "/photos/img-17.jpg",
+        caption: "Speaking at the United Nations, 1994"
+      },
+      {
+        image: "/photos/img-18.jpg",
+        caption:
+          "Mandela voting in South Africa's first democratic election, 1994"
+      },
+      {
+        image: "/photos/img-19.jpg",
+        caption: "With F.W. de Klerk after receiving Nobel Peace Prize"
+      },
+      {
+        image: "/photos/img-20.jpg",
+        caption: "Speaking at the United Nations, 1994"
+      },
+      {
+        image: "/photos/img-21.jpg",
+        caption:
+          "Mandela voting in South Africa's first democratic election, 1994"
+      },
+      {
+        image: "/photos/img-22.jpg",
+        caption: "With F.W. de Klerk after receiving Nobel Peace Prize"
+      },
+      {
+        image: "/photos/img-23.jpg",
+        caption: "Speaking at the United Nations, 1994"
       }
     ]
   };
@@ -194,12 +594,6 @@ const Urai = () => {
         >
           Famous Quotes
         </button>
-        {/* <button
-          className={activeTab === "timeline" ? "active" : ""}
-          onClick={() => setActiveTab("timeline")}
-        >
-          Timeline
-        </button> */}
         <button
           className={activeTab === "gallery" ? "active" : ""}
           onClick={() => setActiveTab("gallery")}
@@ -276,8 +670,8 @@ const Urai = () => {
                     e.target.src =
                       "https://via.placeholder.com/600x400?text=Image+Not+Available";
                   }}
+                  loading="lazy"
                 />
-                {/* <div className="gallery-caption">{item.caption}</div> */}
               </div>
             ))}
           </div>
@@ -298,28 +692,6 @@ const Urai = () => {
           </div>
         </div>
       )}
-
-      {/* <footer className="app-footer">
-        <div className="footer-content">
-          <div className="footer-about">
-            <h3>About This Collection</h3>
-            <p>
-              This digital archive presents historical documents, photographs,
-              and speeches from {famousPerson.name}'s life and work.
-            </p>
-          </div>
-          <div className="footer-credits">
-            <h3>Credits</h3>
-            <p>
-              All materials are sourced from verified historical archives and
-              newspaper publications.
-            </p>
-          </div>
-        </div>
-        <div className="footer-copyright">
-          © {new Date().getFullYear()} {famousPerson.name} Memorial Archive
-        </div>
-      </footer> */}
     </div>
   );
 };

@@ -27,7 +27,7 @@
 .navbar1 {
   background: #274c77;
   color: #e7ecef;
-  padding: 20px 20px;
+  padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -104,35 +104,32 @@
 }
 
 .nav-links1 li.active a {
-  color: #274c77; /* Change to your preferred highlight color */
+  color: #274c77;
   font-weight: bold;
-  text-decoration: underline; /* Optional underline */
+  text-decoration: underline; 
   background-color: #fef5e8c9;
 }
 
-/* For dropdown parent when any child is active */
 .dropdown1.active > a {
   color: #ff0000;
   font-weight: bold;
 }
 
 .dropdown1 {
-  transition: all 0.4s ease; /* Added transition for the dropdown container */
+  transition: all 0.4s ease;
 }
 
-/* Dropdown button style */
 .dropbtn {
   cursor: pointer;
 }
 
-/* Dropdown content */
 .dropdown-content1 {
-  display: block; /* Required for transitions */
+  display: block; 
   opacity: 0;
   max-height: 0;
   transform: translateY(-10px);
   visibility: hidden;
-  overflow: hidden; /* Prevents content from appearing abruptly */
+  overflow: hidden; 
   transition: opacity 0.7s ease, transform 0.7s ease, max-height 0.9s ease,
     visibility 0.7s;
   background-color: #274c77;
@@ -142,7 +139,6 @@
   z-index: 1;
   border-radius: 10px;
   font-size: 1rem;
-  /* position: absolute; (Commented as requested) */
 }
 
 .dropdown-content1 li {
@@ -161,11 +157,10 @@
   background-color: #f0f0f0;
 }
 
-/* Smooth dropdown animation */
 .dropdown1:hover .dropdown-content1 {
   display: block;
   opacity: 1;
-  max-height: 500px; /* Adjust based on content */
+  max-height: 500px; 
   transform: translateY(0);
   visibility: visible;
 }

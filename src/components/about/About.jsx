@@ -93,18 +93,6 @@ const About = () => {
         <a href="#tab4" class="sidebar-link">
           சிறப்புகள்
         </a>
-        {/* <a href="#tab5" class="sidebar-link">
-          சான்றோர் கூற்று
-        </a>
-        <a href="#tab6" class="sidebar-link">
-          கருத்தரங்குகள்
-        </a>
-        <a href="#tab7" class="sidebar-link">
-          பயணங்கள்
-        </a>
-        <a href="#tab8" class="sidebar-link">
-          சமூகப் பணி
-        </a> */}
         <a href="#year1" class="sidebar-link">
           1980-2006
         </a>

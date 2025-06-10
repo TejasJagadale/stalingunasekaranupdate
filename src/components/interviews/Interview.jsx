@@ -9,12 +9,16 @@ const images = [
   { src: "/petigal/img-5.jpg", caption: "Interview 5" },
   { src: "/petigal/img-6.jpg", caption: "Interview 6" },
   { src: "/petigal/img-7.jpg", caption: "Interview 7" },
+  { src: "/petigal/img-8.jpg", caption: "Interview 8" },
+  { src: "/petigal/img-9.jpg", caption: "Interview 9" },
+  { src: "/petigal/img-10.jpg", caption: "Interview 10" },
   { src: "/petigal/img-11.jpg", caption: "Interview 11" },
   { src: "/petigal/img-12.jpg", caption: "Interview 12" },
   { src: "/petigal/img-13.jpg", caption: "Interview 13" },
   { src: "/petigal/img-14.jpg", caption: "Interview 14" },
   { src: "/petigal/img-15.jpg", caption: "Interview 15" },
-  { src: "/petigal/img-16.jpg", caption: "Interview 16" }
+  { src: "/petigal/img-16.jpg", caption: "Interview 16" },
+  { src: "/petigal/img-17.jpg", caption: "Interview 17" }
 ];
 
 const Interview = () => {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { FaChevronDown, FaChevronRight } from "react-icons/fa";
 import "../../styles/meeting.css"; // We'll create this CSS file
 
@@ -6,6 +6,23 @@ const Meeting = () => {
   const [activeTab, setActiveTab] = useState("tab1");
   const [activeAccordion, setActiveAccordion] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+  const overlayRef = useRef(null);
+
+  useEffect(() => {
+    if (selectedImage) {
+      // Scroll to the overlay when an image is selected
+      overlayRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+      });
+      // Prevent background scrolling
+      document.body.style.overflow = "hidden";
+    } else {
+      // Re-enable background scrolling
+      document.body.style.overflow = "auto";
+    }
+  }, [selectedImage]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -17,6 +34,72 @@ const Meeting = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Close modal when clicking outside image
+  const handleOverlayClick = (e) => {
+    if (e.target.classList.contains("image-overlay")) {
+      setSelectedImage(null);
+    }
+  };
+
+  const images = [
+    { src: "/meetimgs/img-1.jpg", caption: "Interview 1" },
+    { src: "/meetimgs/img-2.jpg", caption: "Interview 2" },
+    { src: "/meetimgs/img-3.jpg", caption: "Interview 3" },
+    { src: "/meetimgs/img-4.jpg", caption: "Interview 4" },
+    { src: "/meetimgs/img-5.jpg", caption: "Interview 5" },
+    { src: "/meetimgs/img-6.jpg", caption: "Interview 6" },
+    { src: "/meetimgs/img-7.jpg", caption: "Interview 7" },
+    { src: "/meetimgs/img-8.jpg", caption: "Interview 8" },
+    { src: "/meetimgs/img-9.jpg", caption: "Interview 9" },
+    { src: "/meetimgs/img-10.jpg", caption: "Interview 10" },
+    { src: "/meetimgs/img-11.jpg", caption: "Interview 11" },
+    { src: "/meetimgs/img-12.jpg", caption: "Interview 12" },
+    { src: "/meetimgs/img-13.jpg", caption: "Interview 13" },
+    { src: "/meetimgs/img-14.jpg", caption: "Interview 14" },
+    { src: "/meetimgs/img-15.jpg", caption: "Interview 15" },
+    { src: "/meetimgs/img-16.jpg", caption: "Interview 16" },
+    { src: "/meetimgs/img-17.jpg", caption: "Interview 17" },
+    { src: "/meetimgs/img-18.jpg", caption: "Interview 1" },
+    { src: "/meetimgs/img-19.jpg", caption: "Interview 2" },
+    { src: "/meetimgs/img-20.jpg", caption: "Interview 3" },
+    { src: "/meetimgs/img-21.jpg", caption: "Interview 4" },
+    { src: "/meetimgs/img-22.jpg", caption: "Interview 5" },
+    { src: "/meetimgs/img-23.jpg", caption: "Interview 6" },
+    { src: "/meetimgs/img-24.jpg", caption: "Interview 7" },
+    { src: "/meetimgs/img-25.jpg", caption: "Interview 8" },
+    { src: "/meetimgs/img-26.jpg", caption: "Interview 9" },
+    { src: "/meetimgs/img-27.jpg", caption: "Interview 10" },
+    { src: "/meetimgs/img-28.jpg", caption: "Interview 11" },
+    { src: "/meetimgs/img-29.jpg", caption: "Interview 12" },
+    { src: "/meetimgs/img-30.jpg", caption: "Interview 13" },
+    { src: "/meetimgs/img-31.jpg", caption: "Interview 14" },
+    { src: "/meetimgs/img-32.jpg", caption: "Interview 15" },
+    { src: "/meetimgs/img-33.jpg", caption: "Interview 16" },
+    { src: "/meetimgs/img-34.jpg", caption: "Interview 17" },
+    { src: "/meetimgs/img-35.jpg", caption: "Interview 1" },
+    { src: "/meetimgs/img-36.jpg", caption: "Interview 2" },
+    { src: "/meetimgs/img-37.jpg", caption: "Interview 3" },
+    { src: "/meetimgs/img-38.jpg", caption: "Interview 4" },
+    { src: "/meetimgs/img-39.jpg", caption: "Interview 5" },
+    { src: "/meetimgs/img-40.jpg", caption: "Interview 6" },
+    { src: "/meetimgs/img-41.jpg", caption: "Interview 7" },
+    { src: "/meetimgs/img-42.jpg", caption: "Interview 8" },
+    { src: "/meetimgs/img-43.jpg", caption: "Interview 9" },
+    { src: "/meetimgs/img-44.jpg", caption: "Interview 10" },
+    { src: "/meetimgs/img-45.jpg", caption: "Interview 11" },
+    { src: "/meetimgs/img-46.jpg", caption: "Interview 12" },
+    { src: "/meetimgs/img-47.jpg", caption: "Interview 13" },
+    { src: "/meetimgs/img-48.jpg", caption: "Interview 14" },
+    { src: "/meetimgs/img-49.jpg", caption: "Interview 15" },
+    { src: "/meetimgs/img-50.jpg", caption: "Interview 16" },
+    { src: "/meetimgs/img-51.jpg", caption: "Interview 17" },
+    { src: "/meetimgs/img-52.jpg", caption: "Interview 13" },
+    { src: "/meetimgs/img-53.jpg", caption: "Interview 14" },
+    { src: "/meetimgs/img-54.jpg", caption: "Interview 15" },
+    { src: "/meetimgs/img-55.jpg", caption: "Interview 16" },
+    { src: "/meetimgs/img-56.jpg", caption: "Interview 17" }
+  ];
+
   const tabs = [
     { id: "tab1", label: "All Meetings" },
     { id: "tab2", label: "இசைஞானி இளையராஜா" },
@@ -25,7 +108,8 @@ const Meeting = () => {
     { id: "tab5", label: "டாக்டர் வா.செ. குழந்தைசாமி" },
     { id: "tab6", label: "தியாகி ஐ. மாயண்டிபாரதி" },
     { id: "tab7", label: "ஞானாலயா" },
-    { id: "tab8", label: "டி.எம் காளியண்ணன்" }
+    { id: "tab8", label: "டி.எம் காளியண்ணன்" },
+    { id: "tab9", label: "சந்திப்பு புகைப்படங்கள்" }
   ];
 
   const meetings = [
@@ -152,7 +236,7 @@ const Meeting = () => {
   return (
     <div className="meeting-page">
       {/* Mobile Menu Toggle */}
-      {isMobile && (
+      {/* {isMobile && (
         <div className="mobile-menu-toggle">
           <select
             value={activeTab}
@@ -166,7 +250,7 @@ const Meeting = () => {
             ))}
           </select>
         </div>
-      )}
+      )} */}
 
       <div className="meeting-container">
         {/* Desktop Sidebar */}
@@ -187,7 +271,6 @@ const Meeting = () => {
         )}
 
         <div className="content-area1">
-          {/* Tab 1 - All Meetings */}
           {activeTab === "tab1" && (
             <div className="tab-content active">
               <section>
@@ -212,7 +295,11 @@ const Meeting = () => {
                             <li>{meeting.highlight}</li>
                           </ul>
                           <div>
-                            <a href={meeting.pdf} target="_blank" rel="noreferrer">
+                            <a
+                              href={meeting.pdf}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
                               Read more
                             </a>
                           </div>
@@ -230,10 +317,7 @@ const Meeting = () => {
                           activeAccordion === index ? "open" : ""
                         }`}
                         style={{
-                          maxHeight:
-                            activeAccordion === index
-                              ? `1000px`
-                              : "0"
+                          maxHeight: activeAccordion === index ? `1000px` : "0"
                         }}
                       >
                         <div className="content-wrapper">
@@ -271,7 +355,6 @@ const Meeting = () => {
             </div>
           )}
 
-          {/* Tab 2 - இசைஞானி இளையராஜா */}
           {activeTab === "tab2" && (
             <div className="tab-content active">
               <div className="pdf-container">
@@ -359,6 +442,47 @@ const Meeting = () => {
                   className="pdf-viewer"
                   loading="lazy"
                 ></iframe>
+              </div>
+            </div>
+          )}
+
+          {activeTab === "tab9" && (
+            <div className="gallery">
+              {images.map((img, idx) => (
+                <div
+                  key={idx}
+                  className="gallery-item"
+                  onClick={() => setSelectedImage(img)}
+                  style={{ transitionDelay: `${idx * 0.05}s` }}
+                >
+                  <div className="image-wrapper">
+                    <img src={img.src} alt={img.caption} loading="lazy" />
+                    <div className="overlay"></div>
+                    <div className="caption">
+                      <button className="view-btn">View</button>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+          {selectedImage && (
+            <div
+              className="image-overlay"
+              onClick={handleOverlayClick}
+              ref={overlayRef}
+            >
+              <div className="image-modal">
+                <button
+                  className="close-btn"
+                  onClick={() => setSelectedImage(null)}
+                >
+                  &times;
+                </button>
+                <div className="image-content">
+                  <img src={selectedImage.src} alt={selectedImage.caption} />
+                  <p className="image-caption">{selectedImage.caption}</p>
+                </div>
               </div>
             </div>
           )}

@@ -27,8 +27,7 @@ const essaysData = [
     content: "Full essay content would go here...",
     tags: ["Environment", "Politics", "Science"],
     imageUrl: "/ktturaigal/img-2.jpg",
-    imageCaption: "Illustration of f",
-    imageCaption: "Protesters demanding climate action"
+    imageCaption: "Illustration of f"
   },
   {
     id: 3,
@@ -41,8 +40,7 @@ const essaysData = [
     content: "Full essay content would go here...",
     tags: ["Environment", "Politics", "Science"],
     imageUrl: "/ktturaigal/img-3.jpg",
-    imageCaption: "Illustration of f",
-    imageCaption: "Protesters demanding climate action"
+    imageCaption: "Illustration of f"
   },
   {
     id: 4,
@@ -55,8 +53,7 @@ const essaysData = [
     content: "Full essay content would go here...",
     tags: ["Environment", "Politics", "Science"],
     imageUrl: "/ktturaigal/img-4.jpg",
-    imageCaption: "Illustration of f",
-    imageCaption: "Protesters demanding climate action"
+    imageCaption: "Illustration of f"
   },
   {
     id: 5,
@@ -69,8 +66,7 @@ const essaysData = [
     content: "Full essay content would go here...",
     tags: ["Environment", "Politics", "Science"],
     imageUrl: "/ktturaigal/img-5.jpg",
-    imageCaption: "Illustration of f",
-    imageCaption: "Protesters demanding climate action"
+    imageCaption: "Illustration of f"
   },
   {
     id: 6,
@@ -83,8 +79,7 @@ const essaysData = [
     content: "Full essay content would go here...",
     tags: ["Environment", "Politics", "Science"],
     imageUrl: "/ktturaigal/img-6.jpg",
-    imageCaption: "Illustration of f",
-    imageCaption: "Protesters demanding climate action"
+    imageCaption: "Illustration of f"
   },
   {
     id: 7,
@@ -97,8 +92,7 @@ const essaysData = [
     content: "Full essay content would go here...",
     tags: ["Environment", "Politics", "Science"],
     imageUrl: "/ktturaigal/img-7.jpg",
-    imageCaption: "Illustration of f",
-    imageCaption: "Protesters demanding climate action"
+    imageCaption: "Illustration of f"
   },
   {
     id: 8,
@@ -111,8 +105,7 @@ const essaysData = [
     content: "Full essay content would go here...",
     tags: ["Environment", "Politics", "Science"],
     imageUrl: "/ktturaigal/img-8 (1).jpg",
-    imageCaption: "Illustration of f",
-    imageCaption: "Protesters demanding climate action"
+    imageCaption: "Illustration of f"
   },
   {
     id: 9,
@@ -125,8 +118,7 @@ const essaysData = [
     content: "Full essay content would go here...",
     tags: ["Environment", "Politics", "Science"],
     imageUrl: "/ktturaigal/img-8.jpg",
-    imageCaption: "Illustration of f",
-    imageCaption: "Protesters demanding climate action"
+    imageCaption: "Illustration of f"
   },
   {
     id: 10,
@@ -139,8 +131,7 @@ const essaysData = [
     content: "Full essay content would go here...",
     tags: ["Environment", "Politics", "Science"],
     imageUrl: "/ktturaigal/img-11.jpg",
-    imageCaption: "Illustration of f",
-    imageCaption: "Protesters demanding climate action"
+    imageCaption: "Illustration of f"
   },
   {
     id: 11,
@@ -152,8 +143,7 @@ const essaysData = [
     content: "Full essay content would go here...",
     tags: ["Environment", "Politics", "Science"],
     imageUrl: "/ktturaigal/img-12.jpg",
-    imageCaption: "Illustration of f",
-    imageCaption: "Protesters demanding climate action"
+    imageCaption: "Illustration of f"
   },
   {
     id: 12,
@@ -165,8 +155,7 @@ const essaysData = [
     content: "Full essay content would go here...",
     tags: ["Environment", "Politics", "Science"],
     imageUrl: "/ktturaigal/img-13.jpg",
-    imageCaption: "Illustration of f",
-    imageCaption: "Protesters demanding climate action"
+    imageCaption: "Illustration of f"
   },
   {
     id: 13,
@@ -179,25 +168,49 @@ const essaysData = [
     content: "Full essay content would go here...",
     tags: ["Environment", "Politics", "Science"],
     imageUrl: "/ktturaigal/img-14.jpg",
-    imageCaption: "Illustration of f",
-    imageCaption: "Protesters demanding climate action"
+    imageCaption: "Illustration of f"
+  },
+  {
+    id: 14,
+    title: "அருட்செல்வர் ஒரு புத்தக வித்தகர் ",
+    author: "John Doe",
+    publication: "Environmental Review",
+    date: "March 22, 2022",
+    excerpt: "தமிழக சட்டப் பேரவைத் தலைவரின் பாராட்டு ",
+    content: "Full essay content would go here...",
+    tags: ["Environment", "Politics", "Science"],
+    imageUrl: "/ktturaigal/img-15.jpg",
+    imageCaption: "Illustration of f"
+  },
+  {
+    id: 15,
+    title: "பாட்டாளிகளின் படைப்பாளி ",
+    author: "John Doe",
+    publication: "Environmental Review",
+    date: "March 22, 2022",
+    excerpt: "தமிழக சட்டப் பேரவைத் தலைவரின் பாராட்டு",
+    content: "Full essay content would go here...",
+    tags: ["Environment", "Politics", "Science"],
+    imageUrl: "/ktturaigal/img-16.jpg",
+    imageCaption: "Illustration of f"
+  },
+  {
+    id: 16,
+    title: "எழுத்துப் புரட்சியாளர்கள் ",
+    author: "John Doe",
+    publication: "Environmental Review",
+    date: "March 22, 2022",
+    excerpt:
+      "“நம் கண்ணெதிரே வாழ்ந்த, வாழ்ந்து கொண்டுள்ள சிறந்த படைப்பாளிகளின் படைப்புப் பின்புலத்தை அவர்களிடமே கேட்டுத் தெரிந்துகொள்ளும் அனுபவம், வாசித்து அறிந்து கொள்வதைக் காட்டிலும் வலுவானது",
+    content: "Full essay content would go here...",
+    tags: ["Environment", "Politics", "Science"],
+    imageUrl: "/ktturaigal/img-17.jpg",
+    imageCaption: "Illustration of f"
   }
 ];
 const Essay = () => {
   const [selectedEssay, setSelectedEssay] = useState(null);
-  const [searchTerm, setSearchTerm] = useState("");
-  const [filterTag, setFilterTag] = useState(null);
   const [lightboxOpen, setLightboxOpen] = useState(false);
-
-  const allTags = [...new Set(essaysData.flatMap((essay) => essay.tags))];
-
-  const filteredEssays = essaysData.filter((essay) => {
-    const matchesSearch =
-      essay.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      essay.excerpt.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesTag = filterTag ? essay.tags.includes(filterTag) : true;
-    return matchesSearch && matchesTag;
-  });
 
   const handleEssayClick = (essay) => {
     setSelectedEssay(essay);
@@ -221,19 +234,10 @@ const Essay = () => {
       ) : (
         <>
           <div className="controls">
-            {/* <div className="search-box">
-              <input
-                type="text"
-                placeholder="Search essays..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-              />
-              <i className="search-icon">🔍</i>
-            </div> */}
           </div>
           <h1 className="publication-title">கட்டுரைகள்</h1>
           <div className="essay-card-container">
-            {filteredEssays.map((essay) => (
+            {essaysData.map((essay) => (
               <EssayCard
                 key={essay.id}
                 essay={essay}
