@@ -119,6 +119,7 @@
     padding: 20px 0px 20px 0px;
   }
   .homeimage {
+    display: none;
     width: 50%;
     height: 195px;
     z-index: 0;

@@ -13,7 +13,7 @@ const Subhome = () => {
         </div>
       </header>
 
-      <nav class="bg-gray py-3 sticky top-0 z-10 shadow-md">
+      <nav class="bg-gray sticky top-0 z-10 shadow-md">
         <div class="container mx-auto">
           <div class="nav-tabs">
             <a href="#stalin-section" class="nav-link">
